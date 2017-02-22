@@ -8,7 +8,6 @@ class MusicNotationKitTests: XCTestCase {
         XCTAssertEqual(MusicNotationKit().text, "Hello, World!")
     }
 
-
     static var allTests : [(String, (MusicNotationKitTests) -> () throws -> Void)] {
         return [
             ("testExample", testExample),

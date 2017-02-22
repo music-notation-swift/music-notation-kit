@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_38"
+               BlueprintIdentifier = "OBJ_114"
                BuildableName = "MusicNotationCore.framework"
                BlueprintName = "MusicNotationCore"
                ReferencedContainer = "container:MusicNotationKit.xcodeproj">
@@ -28,7 +28,49 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_64"
+               BlueprintIdentifier = "OBJ_140"
+               BuildableName = "PluginLibrary.framework"
+               BlueprintName = "PluginLibrary"
+               ReferencedContainer = "container:MusicNotationKit.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "OBJ_151"
+               BuildableName = "protoc-gen-swift"
+               BlueprintName = "protoc-gen-swift"
+               ReferencedContainer = "container:MusicNotationKit.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "OBJ_150"
+               BuildableName = "SwiftProtobuf.framework"
+               BlueprintName = "SwiftProtobuf"
+               ReferencedContainer = "container:MusicNotationKit.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "OBJ_227"
                BuildableName = "MusicNotationKit.framework"
                BlueprintName = "MusicNotationKit"
                ReferencedContainer = "container:MusicNotationKit.xcodeproj">
@@ -40,14 +82,13 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      codeCoverageEnabled = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_73"
+               BlueprintIdentifier = "OBJ_243"
                BuildableName = "MusicNotationKitTests.xctest"
                BlueprintName = "MusicNotationKitTests"
                ReferencedContainer = "container:MusicNotationKit.xcodeproj">
@@ -70,7 +111,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "OBJ_38"
+            BlueprintIdentifier = "OBJ_114"
             BuildableName = "MusicNotationCore.framework"
             BlueprintName = "MusicNotationCore"
             ReferencedContainer = "container:MusicNotationKit.xcodeproj">

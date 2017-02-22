@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4A9CFBC498F1223187093E82AF34C77C095DE9C8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4A9CFBC498F1223187093E82AF34C77C095DE9C8" : 9223372036854775807,
+    "43BF8F9148B1F39FBDE34E7D1E69C54C78D21FCC" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "230F8387-80AE-4038-97F5-71ADBD45D30F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4A9CFBC498F1223187093E82AF34C77C095DE9C8" : "music-notation-kit\/",
+    "43BF8F9148B1F39FBDE34E7D1E69C54C78D21FCC" : "music-notation-kit\/Packages\/SwiftProtobuf-0.9.26\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MusicNotationKit",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MusicNotationKit.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/apple\/swift-protobuf.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "43BF8F9148B1F39FBDE34E7D1E69C54C78D21FCC"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/drumnkyle\/music-notation-kit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4A9CFBC498F1223187093E82AF34C77C095DE9C8"
+    }
+  ]
+}
