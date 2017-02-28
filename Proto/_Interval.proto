@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package _;
+
+message Interval {
+    enum IntervalQuality {
+        PERFECT = 0;
+        MINOR = 1;
+        MAJOR = 2;
+        DIMINISHED = 3;
+        AUGMENTED = 4;
+        DOUBLY_DIMINISHED = 5;
+        DOUBLY_AUGMENTED = 6;
+    }
+
+    IntervalQuality quality = 1;
+    int64 number = 2;
+}

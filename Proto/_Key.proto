@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package _;
+
+import public "_Types.proto";
+
+message Key {
+    KeyType type = 1;
+    NoteLetter note_letter = 2;
+    Accidental accidental = 3;
+}

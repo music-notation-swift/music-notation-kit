@@ -2,4 +2,5 @@
 
 PATH=Bin/:$PATH
 
-Bin/protoc --swift_out=Sources/MusicNotationKit/ --proto_path=Proto/ Proto/*.proto
+Bin/protoc --swift_out=Sources/MusicNotationKit/GeneratedModels --proto_path=Proto/ Proto/*.proto
+swift package generate-xcodeproj

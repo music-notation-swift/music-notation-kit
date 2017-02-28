@@ -1,0 +1,54 @@
+syntax = "proto3";
+
+package _;
+
+
+enum KeyType {
+    UNDEF_KEY = 0;
+    MAJOR = 1;
+    MINOR = 2;
+}
+
+enum NoteLetter {
+    UNDEF_NOTE = 0;
+    C = 1;
+    D = 2;
+    E = 3;
+    F = 4;
+    G = 5;
+    A = 6;
+    B = 7;
+}
+
+enum Instrument {
+    GUITAR6 = 0;
+    DRUMS = 1;
+}
+
+enum Accidental {
+    UNDEF_ACCIDENTAL = 0;
+    SHARP = 1;
+    DOUBLE_SHARP = 2;
+    FLAT = 3;
+    DOUBLE_FLAT = 4;
+    NATURAL = 5;
+}
+
+enum Octave {
+    OCTAVE0 = 0;
+    OCTAVE1 = 1;
+    OCTAVE2 = 2;
+    OCTAVE3 = 3;
+    OCTAVE4 = 4;
+    OCTAVE5 = 5;
+    OCTAVE6 = 6;
+    OCTAVE7 = 7;
+    OCTAVE8 = 8;
+    OCTAVE9 = 9;
+}
+
+enum Tie {
+    BEGIN = 0;
+    END = 1;
+    BEGIN_AND_END = 2;
+}

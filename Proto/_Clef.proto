@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package _;
+
+import public "_StaffLocation.proto";
+import public "_Tone.proto";
+
+message Clef {
+    Tone tone = 1;
+    StaffLocation location = 2;
+}

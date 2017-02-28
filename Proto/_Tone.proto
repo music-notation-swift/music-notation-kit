@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package _;
+
+import "_Types.proto";
+
+message Tone {
+    NoteLetter note_letter = 1;
+    Accidental accidental = 2;
+    Octave octave = 3;
+}

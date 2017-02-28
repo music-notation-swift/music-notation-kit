@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package _;
+
+message TimeSignature {
+    int64 top_number = 1;
+    int64 bottom_number = 2;
+    int64 tempo = 3;
+}

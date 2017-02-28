@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package _;
+
+import "_Clef.proto";
+import "_Types.proto";
+
+message Staff {
+    Clef clef = 1;
+    Instrument instrument = 2;
+    // TODO add NotesHolder, which should implement one_of{Measure|RepeatedMeasure?}.
+}
