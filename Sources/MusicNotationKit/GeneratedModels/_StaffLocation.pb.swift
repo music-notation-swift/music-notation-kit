@@ -98,14 +98,14 @@ struct _StaffLocation: SwiftProtobuf.Message, SwiftProtobuf.Proto3Message, Swift
 
   var type: _StaffLocation.LocationType = _StaffLocation.LocationType.line
 
-  var number: Int64 = 0
+  var number: Int32 = 0
 
   init() {}
 
   public mutating func _protoc_generated_decodeField(setter: inout SwiftProtobuf.FieldDecoder, protoFieldNumber: Int) throws {
     switch protoFieldNumber {
     case 1: try setter.decodeSingularField(fieldType: _StaffLocation.LocationType.self, value: &type)
-    case 2: try setter.decodeSingularField(fieldType: SwiftProtobuf.ProtobufInt64.self, value: &number)
+    case 2: try setter.decodeSingularField(fieldType: SwiftProtobuf.ProtobufInt32.self, value: &number)
     default: break
     }
   }
@@ -115,7 +115,7 @@ struct _StaffLocation: SwiftProtobuf.Message, SwiftProtobuf.Proto3Message, Swift
       try visitor.visitSingularField(fieldType: _StaffLocation.LocationType.self, value: type, protoFieldNumber: 1)
     }
     if number != 0 {
-      try visitor.visitSingularField(fieldType: SwiftProtobuf.ProtobufInt64.self, value: number, protoFieldNumber: 2)
+      try visitor.visitSingularField(fieldType: SwiftProtobuf.ProtobufInt32.self, value: number, protoFieldNumber: 2)
     }
   }
 

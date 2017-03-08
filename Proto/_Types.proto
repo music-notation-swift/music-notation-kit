@@ -35,16 +35,17 @@ enum Accidental {
 }
 
 enum Octave {
-    OCTAVE0 = 0;
-    OCTAVE1 = 1;
-    OCTAVE2 = 2;
-    OCTAVE3 = 3;
-    OCTAVE4 = 4;
-    OCTAVE5 = 5;
-    OCTAVE6 = 6;
-    OCTAVE7 = 7;
-    OCTAVE8 = 8;
-    OCTAVE9 = 9;
+    NEGATIVE1 = 0;
+    OCT0 = 1;
+    OCT1 = 2;
+    OCT2 = 3;
+    OCT3 = 4;
+    OCT4 = 5;
+    OCT5 = 6;
+    OCT6 = 7;
+    OCT7 = 8;
+    OCT8 = 9;
+    OCT9 = 10;
 }
 
 enum Tie {

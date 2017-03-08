@@ -1,10 +1,10 @@
 import MusicNotationCore
 
-extension _Key {
-    func transform() -> Key {
-        return Key(
+extension _Tone {
+    func transform() -> Tone {
+        return Tone(
             noteLetter: self.noteLetter.transform(),
             accidental: self.accidental.transform(),
-            type: self.type.transform())
+            octave: self.octave.transform())
     }
 }

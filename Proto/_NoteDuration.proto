@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+package _;
+
+message NoteDuration {
+    enum Value {
+        LARGE = 0;
+        LONG = 1;
+        DOUBLE_WHOLE = 2;
+        WHOLE = 3;
+        HALF = 4;
+        QUARTER = 5;
+        EIGHTH = 6;
+        SIXTEENTH = 7;
+        THIRTY_SECOND = 8;
+        SIXTY_FOURTH = 9;
+        ONE_TWENTY_EIGHTH = 10;
+        TWO_FIFTY_SIXTH = 11;
+    }
+
+    // All enums fall in the same scope of the message. The same applies
+    // to the global scope. Added TS_ preffix to avoid collissions with
+    // Value enum.
+    enum TimeSignatureValue {
+        TS_WHOLE = 0;
+        TS_HALF = 1;
+        TS_QUARTER = 2;
+        TS_EIGHTH = 3;
+        TS_SIXTEENTH = 4;
+        TS_THIRTY_SECOND = 5;
+        TS_SIXTY_FOURTH = 6;
+        TS_ONE_TWENTY_EIGHTH = 7;
+   }
+
+    Value value = 1;
+    int64 dot_count = 2;
+    TimeSignatureValue time_signature_value = 3;
+}

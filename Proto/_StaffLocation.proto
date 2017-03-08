@@ -8,5 +8,5 @@ message StaffLocation {
         SPACE = 1;
     }
     LocationType type = 1;
-    int64 number = 2;
+    int32 number = 2;
 }

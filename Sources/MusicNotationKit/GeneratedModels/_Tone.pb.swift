@@ -25,7 +25,7 @@ struct _Tone: SwiftProtobuf.Message, SwiftProtobuf.Proto3Message, SwiftProtobuf.
 
   var accidental: _Accidental = _Accidental.undefAccidental
 
-  var octave: _Octave = _Octave.0
+  var octave: _Octave = _Octave.negative1
 
   init() {}
 
@@ -45,7 +45,7 @@ struct _Tone: SwiftProtobuf.Message, SwiftProtobuf.Proto3Message, SwiftProtobuf.
     if accidental != _Accidental.undefAccidental {
       try visitor.visitSingularField(fieldType: _Accidental.self, value: accidental, protoFieldNumber: 2)
     }
-    if octave != _Octave.0 {
+    if octave != _Octave.negative1 {
       try visitor.visitSingularField(fieldType: _Octave.self, value: octave, protoFieldNumber: 3)
     }
   }

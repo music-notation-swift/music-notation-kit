@@ -404,82 +404,87 @@ enum _Accidental: SwiftProtobuf.Enum {
 
 enum _Octave: SwiftProtobuf.Enum {
   typealias RawValue = Int
-  case 0 // = 0
-  case 1 // = 1
-  case 2 // = 2
-  case 3 // = 3
-  case 4 // = 4
-  case 5 // = 5
-  case 6 // = 6
-  case 7 // = 7
-  case 8 // = 8
-  case 9 // = 9
+  case negative1 // = 0
+  case oct0 // = 1
+  case oct1 // = 2
+  case oct2 // = 3
+  case oct3 // = 4
+  case oct4 // = 5
+  case oct5 // = 6
+  case oct6 // = 7
+  case oct7 // = 8
+  case oct8 // = 9
+  case oct9 // = 10
   case UNRECOGNIZED(Int)
 
   init() {
-    self = .0
+    self = .negative1
   }
 
   init?(rawValue: Int) {
     switch rawValue {
-    case 0: self = .0
-    case 1: self = .1
-    case 2: self = .2
-    case 3: self = .3
-    case 4: self = .4
-    case 5: self = .5
-    case 6: self = .6
-    case 7: self = .7
-    case 8: self = .8
-    case 9: self = .9
+    case 0: self = .negative1
+    case 1: self = .oct0
+    case 2: self = .oct1
+    case 3: self = .oct2
+    case 4: self = .oct3
+    case 5: self = .oct4
+    case 6: self = .oct5
+    case 7: self = .oct6
+    case 8: self = .oct7
+    case 9: self = .oct8
+    case 10: self = .oct9
     default: self = .UNRECOGNIZED(rawValue)
     }
   }
 
   init?(name: String) {
     switch name {
-    case "0": self = .0
-    case "1": self = .1
-    case "2": self = .2
-    case "3": self = .3
-    case "4": self = .4
-    case "5": self = .5
-    case "6": self = .6
-    case "7": self = .7
-    case "8": self = .8
-    case "9": self = .9
+    case "negative1": self = .negative1
+    case "oct0": self = .oct0
+    case "oct1": self = .oct1
+    case "oct2": self = .oct2
+    case "oct3": self = .oct3
+    case "oct4": self = .oct4
+    case "oct5": self = .oct5
+    case "oct6": self = .oct6
+    case "oct7": self = .oct7
+    case "oct8": self = .oct8
+    case "oct9": self = .oct9
     default: return nil
     }
   }
 
   init?(jsonName: String) {
     switch jsonName {
-    case "OCTAVE0": self = .0
-    case "OCTAVE1": self = .1
-    case "OCTAVE2": self = .2
-    case "OCTAVE3": self = .3
-    case "OCTAVE4": self = .4
-    case "OCTAVE5": self = .5
-    case "OCTAVE6": self = .6
-    case "OCTAVE7": self = .7
-    case "OCTAVE8": self = .8
-    case "OCTAVE9": self = .9
+    case "NEGATIVE1": self = .negative1
+    case "OCT0": self = .oct0
+    case "OCT1": self = .oct1
+    case "OCT2": self = .oct2
+    case "OCT3": self = .oct3
+    case "OCT4": self = .oct4
+    case "OCT5": self = .oct5
+    case "OCT6": self = .oct6
+    case "OCT7": self = .oct7
+    case "OCT8": self = .oct8
+    case "OCT9": self = .oct9
     default: return nil
     }
   }
 
   init?(protoName: String) {
     switch protoName {
-    case "OCTAVE0": self = .0
-    case "OCTAVE1": self = .1
-    case "OCTAVE2": self = .2
-    case "OCTAVE3": self = .3
-    case "OCTAVE4": self = .4
-    case "OCTAVE5": self = .5
-    case "OCTAVE6": self = .6
-    case "OCTAVE7": self = .7
-    case "OCTAVE8": self = .8
-    case "OCTAVE9": self = .9
+    case "NEGATIVE1": self = .negative1
+    case "OCT0": self = .oct0
+    case "OCT1": self = .oct1
+    case "OCT2": self = .oct2
+    case "OCT3": self = .oct3
+    case "OCT4": self = .oct4
+    case "OCT5": self = .oct5
+    case "OCT6": self = .oct6
+    case "OCT7": self = .oct7
+    case "OCT8": self = .oct8
+    case "OCT9": self = .oct9
     default: return nil
     }
   }
@@ -487,16 +492,17 @@ enum _Octave: SwiftProtobuf.Enum {
   var rawValue: Int {
     get {
       switch self {
-      case .0: return 0
-      case .1: return 1
-      case .2: return 2
-      case .3: return 3
-      case .4: return 4
-      case .5: return 5
-      case .6: return 6
-      case .7: return 7
-      case .8: return 8
-      case .9: return 9
+      case .negative1: return 0
+      case .oct0: return 1
+      case .oct1: return 2
+      case .oct2: return 3
+      case .oct3: return 4
+      case .oct4: return 5
+      case .oct5: return 6
+      case .oct6: return 7
+      case .oct7: return 8
+      case .oct8: return 9
+      case .oct9: return 10
       case .UNRECOGNIZED(let i): return i
       }
     }
@@ -505,16 +511,17 @@ enum _Octave: SwiftProtobuf.Enum {
   var json: String {
     get {
       switch self {
-      case .0: return "\"OCTAVE0\""
-      case .1: return "\"OCTAVE1\""
-      case .2: return "\"OCTAVE2\""
-      case .3: return "\"OCTAVE3\""
-      case .4: return "\"OCTAVE4\""
-      case .5: return "\"OCTAVE5\""
-      case .6: return "\"OCTAVE6\""
-      case .7: return "\"OCTAVE7\""
-      case .8: return "\"OCTAVE8\""
-      case .9: return "\"OCTAVE9\""
+      case .negative1: return "\"NEGATIVE1\""
+      case .oct0: return "\"OCT0\""
+      case .oct1: return "\"OCT1\""
+      case .oct2: return "\"OCT2\""
+      case .oct3: return "\"OCT3\""
+      case .oct4: return "\"OCT4\""
+      case .oct5: return "\"OCT5\""
+      case .oct6: return "\"OCT6\""
+      case .oct7: return "\"OCT7\""
+      case .oct8: return "\"OCT8\""
+      case .oct9: return "\"OCT9\""
       case .UNRECOGNIZED(let i): return String(i)
       }
     }
@@ -525,16 +532,17 @@ enum _Octave: SwiftProtobuf.Enum {
   var debugDescription: String {
     get {
       switch self {
-      case .0: return ".0"
-      case .1: return ".1"
-      case .2: return ".2"
-      case .3: return ".3"
-      case .4: return ".4"
-      case .5: return ".5"
-      case .6: return ".6"
-      case .7: return ".7"
-      case .8: return ".8"
-      case .9: return ".9"
+      case .negative1: return ".negative1"
+      case .oct0: return ".oct0"
+      case .oct1: return ".oct1"
+      case .oct2: return ".oct2"
+      case .oct3: return ".oct3"
+      case .oct4: return ".oct4"
+      case .oct5: return ".oct5"
+      case .oct6: return ".oct6"
+      case .oct7: return ".oct7"
+      case .oct8: return ".oct8"
+      case .oct9: return ".oct9"
       case .UNRECOGNIZED(let v): return ".UNRECOGNIZED(\(v))"
       }
     }

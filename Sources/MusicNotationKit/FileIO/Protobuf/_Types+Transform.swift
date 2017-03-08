@@ -1,5 +1,24 @@
 import MusicNotationCore
 
+extension _Octave {
+    func transform() -> Octave {
+        switch self {
+        case .negative1: return Octave.octaveNegative1
+        case .oct0: return Octave.octave0
+        case .oct1: return Octave.octave1
+        case .oct2: return Octave.octave2
+        case .oct3: return Octave.octave3
+        case .oct4: return Octave.octave4
+        case .oct5: return Octave.octave5
+        case .oct6: return Octave.octave6
+        case .oct7: return Octave.octave7
+        case .oct8: return Octave.octave8
+        case .oct9: return Octave.octave9
+        default: return Octave.octave0
+        }
+    }
+}
+
 extension _NoteLetter {
     func transform() -> NoteLetter {
         switch self {
