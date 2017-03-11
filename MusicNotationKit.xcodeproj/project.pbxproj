@@ -7,200 +7,212 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		OBJ_145 /* Clef.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Clef.swift */; };
-		OBJ_146 /* Enharmonic.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Enharmonic.swift */; };
-		OBJ_147 /* ImmutableMeasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* ImmutableMeasure.swift */; };
-		OBJ_148 /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Interval.swift */; };
-		OBJ_149 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Key.swift */; };
-		OBJ_150 /* Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Measure.swift */; };
-		OBJ_151 /* MeasureDurationValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* MeasureDurationValidator.swift */; };
-		OBJ_152 /* MeasureRepeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* MeasureRepeat.swift */; };
-		OBJ_153 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* Note.swift */; };
-		OBJ_154 /* NoteCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* NoteCollection.swift */; };
-		OBJ_155 /* NoteDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* NoteDuration.swift */; };
-		OBJ_156 /* NoteHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* NoteHolder.swift */; };
-		OBJ_157 /* RepeatedMeasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* RepeatedMeasure.swift */; };
-		OBJ_158 /* Staff.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* Staff.swift */; };
-		OBJ_159 /* StaffLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* StaffLocation.swift */; };
-		OBJ_160 /* SwiftHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* SwiftHelpers.swift */; };
-		OBJ_161 /* TimeSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* TimeSignature.swift */; };
-		OBJ_162 /* Tone.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* Tone.swift */; };
-		OBJ_163 /* Tuplet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Tuplet.swift */; };
-		OBJ_164 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* Types.swift */; };
-		OBJ_171 /* descriptor.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* descriptor.pb.swift */; };
-		OBJ_172 /* plugin.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* plugin.pb.swift */; };
-		OBJ_174 /* SwiftProtobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_137 /* SwiftProtobuf.framework */; };
-		OBJ_182 /* CodePrinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* CodePrinter.swift */; };
-		OBJ_183 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* Context.swift */; };
-		OBJ_184 /* EnumGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* EnumGenerator.swift */; };
-		OBJ_185 /* ExtensionGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* ExtensionGenerator.swift */; };
-		OBJ_186 /* FileGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* FileGenerator.swift */; };
-		OBJ_187 /* FileIo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* FileIo.swift */; };
-		OBJ_188 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* main.swift */; };
-		OBJ_189 /* MessageFieldGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* MessageFieldGenerator.swift */; };
-		OBJ_190 /* MessageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* MessageGenerator.swift */; };
-		OBJ_191 /* OneofGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* OneofGenerator.swift */; };
-		OBJ_192 /* ReservedWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* ReservedWords.swift */; };
-		OBJ_193 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* StringUtils.swift */; };
-		OBJ_194 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* Version.swift */; };
-		OBJ_196 /* SwiftProtobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_137 /* SwiftProtobuf.framework */; };
-		OBJ_197 /* PluginLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_135 /* PluginLibrary.framework */; };
-		OBJ_204 /* api.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* api.pb.swift */; };
-		OBJ_205 /* DebugDescriptionVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* DebugDescriptionVisitor.swift */; };
-		OBJ_206 /* duration.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* duration.pb.swift */; };
-		OBJ_207 /* empty.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* empty.pb.swift */; };
-		OBJ_208 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* Enum.swift */; };
-		OBJ_209 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* Errors.swift */; };
-		OBJ_210 /* ExtensibleMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* ExtensibleMessage.swift */; };
-		OBJ_211 /* ExtensionFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* ExtensionFields.swift */; };
-		OBJ_212 /* ExtensionFieldValueSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* ExtensionFieldValueSet.swift */; };
-		OBJ_213 /* ExtensionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* ExtensionSet.swift */; };
-		OBJ_214 /* field_mask.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* field_mask.pb.swift */; };
-		OBJ_215 /* FieldDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* FieldDecoder.swift */; };
-		OBJ_216 /* FieldNameMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* FieldNameMap.swift */; };
-		OBJ_217 /* FieldTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* FieldTag.swift */; };
-		OBJ_218 /* FieldTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* FieldTypes.swift */; };
-		OBJ_219 /* Google_Protobuf_Any.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* Google_Protobuf_Any.swift */; };
-		OBJ_220 /* Google_Protobuf_Duration_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* Google_Protobuf_Duration_Extensions.swift */; };
-		OBJ_221 /* Google_Protobuf_FieldMask_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* Google_Protobuf_FieldMask_Extensions.swift */; };
-		OBJ_222 /* Google_Protobuf_Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* Google_Protobuf_Struct.swift */; };
-		OBJ_223 /* Google_Protobuf_Timestamp_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* Google_Protobuf_Timestamp_Extensions.swift */; };
-		OBJ_224 /* Google_Protobuf_Wrappers+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* Google_Protobuf_Wrappers+Extensions.swift */; };
-		OBJ_225 /* HashVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* HashVisitor.swift */; };
-		OBJ_226 /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* JSONDecoder.swift */; };
-		OBJ_227 /* JSONEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_70 /* JSONEncoder.swift */; };
-		OBJ_228 /* JSONScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* JSONScanner.swift */; };
-		OBJ_229 /* JSONToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* JSONToken.swift */; };
-		OBJ_230 /* JSONTypeAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* JSONTypeAdditions.swift */; };
-		OBJ_231 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* Map.swift */; };
-		OBJ_232 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_75 /* Message.swift */; };
-		OBJ_233 /* MessageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_76 /* MessageExtension.swift */; };
-		OBJ_234 /* MirrorVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_77 /* MirrorVisitor.swift */; };
-		OBJ_235 /* OneofEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_78 /* OneofEnum.swift */; };
-		OBJ_236 /* ProtobufDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_79 /* ProtobufDecoder.swift */; };
-		OBJ_237 /* ProtobufEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_80 /* ProtobufEncoder.swift */; };
-		OBJ_238 /* ProtobufEncodingSizeVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_81 /* ProtobufEncodingSizeVisitor.swift */; };
-		OBJ_239 /* ProtobufEncodingVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_82 /* ProtobufEncodingVisitor.swift */; };
-		OBJ_240 /* ProtobufTypeAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_83 /* ProtobufTypeAdditions.swift */; };
-		OBJ_241 /* ProtoNameProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_84 /* ProtoNameProviding.swift */; };
-		OBJ_242 /* ProtoNameResolvers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_85 /* ProtoNameResolvers.swift */; };
-		OBJ_243 /* source_context.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_86 /* source_context.pb.swift */; };
-		OBJ_244 /* timestamp.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_87 /* timestamp.pb.swift */; };
-		OBJ_245 /* type.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_88 /* type.pb.swift */; };
-		OBJ_246 /* UnknownStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_89 /* UnknownStorage.swift */; };
-		OBJ_247 /* Varint.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_90 /* Varint.swift */; };
-		OBJ_248 /* Visitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_91 /* Visitor.swift */; };
-		OBJ_249 /* WireFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_92 /* WireFormat.swift */; };
-		OBJ_250 /* wrappers.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_93 /* wrappers.pb.swift */; };
-		OBJ_251 /* ZigZag.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_94 /* ZigZag.swift */; };
-		OBJ_258 /* MusicNotationKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_96 /* MusicNotationKit.swift */; };
-		OBJ_259 /* _Clef.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_98 /* _Clef.pb.swift */; };
-		OBJ_260 /* _Interval.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_99 /* _Interval.pb.swift */; };
-		OBJ_261 /* _Key.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_100 /* _Key.pb.swift */; };
-		OBJ_262 /* _Measure.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_101 /* _Measure.pb.swift */; };
-		OBJ_263 /* _MeasureRepeat.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_102 /* _MeasureRepeat.pb.swift */; };
-		OBJ_264 /* _Note.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_103 /* _Note.pb.swift */; };
-		OBJ_265 /* _NoteDuration.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_104 /* _NoteDuration.pb.swift */; };
-		OBJ_266 /* _Staff.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_105 /* _Staff.pb.swift */; };
-		OBJ_267 /* _StaffLocation.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_106 /* _StaffLocation.pb.swift */; };
-		OBJ_268 /* _TimeSignature.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_107 /* _TimeSignature.pb.swift */; };
-		OBJ_269 /* _Tone.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_108 /* _Tone.pb.swift */; };
-		OBJ_270 /* _Tuplet.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_109 /* _Tuplet.pb.swift */; };
-		OBJ_271 /* _Types.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_110 /* _Types.pb.swift */; };
-		OBJ_272 /* _Clef+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_113 /* _Clef+Transform.swift */; };
-		OBJ_273 /* _Interval+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_114 /* _Interval+Transform.swift */; };
-		OBJ_274 /* _Key+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_115 /* _Key+Transform.swift */; };
-		OBJ_275 /* _Measure+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_116 /* _Measure+Transform.swift */; };
-		OBJ_276 /* _MeasureRepeat+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_117 /* _MeasureRepeat+Transform.swift */; };
-		OBJ_277 /* _Note+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_118 /* _Note+Transform.swift */; };
-		OBJ_278 /* _NoteDuration+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_119 /* _NoteDuration+Transform.swift */; };
-		OBJ_279 /* _Staff+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_120 /* _Staff+Transform.swift */; };
-		OBJ_280 /* _StaffLocation+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_121 /* _StaffLocation+Transform.swift */; };
-		OBJ_281 /* _TimeSignature+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_122 /* _TimeSignature+Transform.swift */; };
-		OBJ_282 /* _Tone+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_123 /* _Tone+Transform.swift */; };
-		OBJ_283 /* _Tuplet+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_124 /* _Tuplet+Transform.swift */; };
-		OBJ_284 /* _Types+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_125 /* _Types+Transform.swift */; };
-		OBJ_286 /* MusicNotationCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_134 /* MusicNotationCore.framework */; };
-		OBJ_287 /* SwiftProtobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_137 /* SwiftProtobuf.framework */; };
-		OBJ_288 /* PluginLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_135 /* PluginLibrary.framework */; };
-		OBJ_297 /* _KeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_128 /* _KeyTests.swift */; };
-		OBJ_298 /* MusicNotationKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_129 /* MusicNotationKitTests.swift */; };
-		OBJ_299 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_130 /* TestHelpers.swift */; };
-		OBJ_301 /* MusicNotationCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_134 /* MusicNotationCore.framework */; };
-		OBJ_302 /* SwiftProtobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_137 /* SwiftProtobuf.framework */; };
-		OBJ_303 /* PluginLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_135 /* PluginLibrary.framework */; };
-		OBJ_304 /* MusicNotationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_138 /* MusicNotationKit.framework */; };
+		OBJ_157 /* Clef.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Clef.swift */; };
+		OBJ_158 /* Enharmonic.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Enharmonic.swift */; };
+		OBJ_159 /* ImmutableMeasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* ImmutableMeasure.swift */; };
+		OBJ_160 /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Interval.swift */; };
+		OBJ_161 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Key.swift */; };
+		OBJ_162 /* Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Measure.swift */; };
+		OBJ_163 /* MeasureDurationValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* MeasureDurationValidator.swift */; };
+		OBJ_164 /* MeasureRepeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* MeasureRepeat.swift */; };
+		OBJ_165 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* Note.swift */; };
+		OBJ_166 /* NoteCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* NoteCollection.swift */; };
+		OBJ_167 /* NoteDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* NoteDuration.swift */; };
+		OBJ_168 /* NoteHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* NoteHolder.swift */; };
+		OBJ_169 /* RepeatedMeasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* RepeatedMeasure.swift */; };
+		OBJ_170 /* Staff.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* Staff.swift */; };
+		OBJ_171 /* StaffLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* StaffLocation.swift */; };
+		OBJ_172 /* SwiftHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* SwiftHelpers.swift */; };
+		OBJ_173 /* TimeSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* TimeSignature.swift */; };
+		OBJ_174 /* Tone.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* Tone.swift */; };
+		OBJ_175 /* Tuplet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Tuplet.swift */; };
+		OBJ_176 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* Types.swift */; };
+		OBJ_183 /* descriptor.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* descriptor.pb.swift */; };
+		OBJ_184 /* plugin.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* plugin.pb.swift */; };
+		OBJ_186 /* SwiftProtobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_149 /* SwiftProtobuf.framework */; };
+		OBJ_194 /* CodePrinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* CodePrinter.swift */; };
+		OBJ_195 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* Context.swift */; };
+		OBJ_196 /* EnumGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* EnumGenerator.swift */; };
+		OBJ_197 /* ExtensionGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* ExtensionGenerator.swift */; };
+		OBJ_198 /* FileGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* FileGenerator.swift */; };
+		OBJ_199 /* FileIo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* FileIo.swift */; };
+		OBJ_200 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* main.swift */; };
+		OBJ_201 /* MessageFieldGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* MessageFieldGenerator.swift */; };
+		OBJ_202 /* MessageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* MessageGenerator.swift */; };
+		OBJ_203 /* OneofGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* OneofGenerator.swift */; };
+		OBJ_204 /* ReservedWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* ReservedWords.swift */; };
+		OBJ_205 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* StringUtils.swift */; };
+		OBJ_206 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* Version.swift */; };
+		OBJ_208 /* SwiftProtobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_149 /* SwiftProtobuf.framework */; };
+		OBJ_209 /* PluginLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_147 /* PluginLibrary.framework */; };
+		OBJ_216 /* api.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* api.pb.swift */; };
+		OBJ_217 /* DebugDescriptionVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* DebugDescriptionVisitor.swift */; };
+		OBJ_218 /* duration.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* duration.pb.swift */; };
+		OBJ_219 /* empty.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* empty.pb.swift */; };
+		OBJ_220 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* Enum.swift */; };
+		OBJ_221 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* Errors.swift */; };
+		OBJ_222 /* ExtensibleMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* ExtensibleMessage.swift */; };
+		OBJ_223 /* ExtensionFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* ExtensionFields.swift */; };
+		OBJ_224 /* ExtensionFieldValueSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* ExtensionFieldValueSet.swift */; };
+		OBJ_225 /* ExtensionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* ExtensionSet.swift */; };
+		OBJ_226 /* field_mask.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* field_mask.pb.swift */; };
+		OBJ_227 /* FieldDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* FieldDecoder.swift */; };
+		OBJ_228 /* FieldNameMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* FieldNameMap.swift */; };
+		OBJ_229 /* FieldTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* FieldTag.swift */; };
+		OBJ_230 /* FieldTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* FieldTypes.swift */; };
+		OBJ_231 /* Google_Protobuf_Any.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* Google_Protobuf_Any.swift */; };
+		OBJ_232 /* Google_Protobuf_Duration_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* Google_Protobuf_Duration_Extensions.swift */; };
+		OBJ_233 /* Google_Protobuf_FieldMask_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* Google_Protobuf_FieldMask_Extensions.swift */; };
+		OBJ_234 /* Google_Protobuf_Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* Google_Protobuf_Struct.swift */; };
+		OBJ_235 /* Google_Protobuf_Timestamp_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* Google_Protobuf_Timestamp_Extensions.swift */; };
+		OBJ_236 /* Google_Protobuf_Wrappers+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* Google_Protobuf_Wrappers+Extensions.swift */; };
+		OBJ_237 /* HashVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* HashVisitor.swift */; };
+		OBJ_238 /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* JSONDecoder.swift */; };
+		OBJ_239 /* JSONEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_70 /* JSONEncoder.swift */; };
+		OBJ_240 /* JSONScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* JSONScanner.swift */; };
+		OBJ_241 /* JSONToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* JSONToken.swift */; };
+		OBJ_242 /* JSONTypeAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* JSONTypeAdditions.swift */; };
+		OBJ_243 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* Map.swift */; };
+		OBJ_244 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_75 /* Message.swift */; };
+		OBJ_245 /* MessageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_76 /* MessageExtension.swift */; };
+		OBJ_246 /* MirrorVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_77 /* MirrorVisitor.swift */; };
+		OBJ_247 /* OneofEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_78 /* OneofEnum.swift */; };
+		OBJ_248 /* ProtobufDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_79 /* ProtobufDecoder.swift */; };
+		OBJ_249 /* ProtobufEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_80 /* ProtobufEncoder.swift */; };
+		OBJ_250 /* ProtobufEncodingSizeVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_81 /* ProtobufEncodingSizeVisitor.swift */; };
+		OBJ_251 /* ProtobufEncodingVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_82 /* ProtobufEncodingVisitor.swift */; };
+		OBJ_252 /* ProtobufTypeAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_83 /* ProtobufTypeAdditions.swift */; };
+		OBJ_253 /* ProtoNameProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_84 /* ProtoNameProviding.swift */; };
+		OBJ_254 /* ProtoNameResolvers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_85 /* ProtoNameResolvers.swift */; };
+		OBJ_255 /* source_context.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_86 /* source_context.pb.swift */; };
+		OBJ_256 /* timestamp.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_87 /* timestamp.pb.swift */; };
+		OBJ_257 /* type.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_88 /* type.pb.swift */; };
+		OBJ_258 /* UnknownStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_89 /* UnknownStorage.swift */; };
+		OBJ_259 /* Varint.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_90 /* Varint.swift */; };
+		OBJ_260 /* Visitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_91 /* Visitor.swift */; };
+		OBJ_261 /* WireFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_92 /* WireFormat.swift */; };
+		OBJ_262 /* wrappers.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_93 /* wrappers.pb.swift */; };
+		OBJ_263 /* ZigZag.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_94 /* ZigZag.swift */; };
+		OBJ_270 /* MusicNotationKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_96 /* MusicNotationKit.swift */; };
+		OBJ_271 /* _Clef.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_98 /* _Clef.pb.swift */; };
+		OBJ_272 /* _Interval.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_99 /* _Interval.pb.swift */; };
+		OBJ_273 /* _Key.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_100 /* _Key.pb.swift */; };
+		OBJ_274 /* _Measure.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_101 /* _Measure.pb.swift */; };
+		OBJ_275 /* _MeasureRepeat.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_102 /* _MeasureRepeat.pb.swift */; };
+		OBJ_276 /* _Note.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_103 /* _Note.pb.swift */; };
+		OBJ_277 /* _NoteDuration.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_104 /* _NoteDuration.pb.swift */; };
+		OBJ_278 /* _Staff.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_105 /* _Staff.pb.swift */; };
+		OBJ_279 /* _StaffLocation.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_106 /* _StaffLocation.pb.swift */; };
+		OBJ_280 /* _TimeSignature.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_107 /* _TimeSignature.pb.swift */; };
+		OBJ_281 /* _Tone.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_108 /* _Tone.pb.swift */; };
+		OBJ_282 /* _Tuplet.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_109 /* _Tuplet.pb.swift */; };
+		OBJ_283 /* _Types.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_110 /* _Types.pb.swift */; };
+		OBJ_284 /* _Clef+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_113 /* _Clef+Transform.swift */; };
+		OBJ_285 /* _Interval+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_114 /* _Interval+Transform.swift */; };
+		OBJ_286 /* _Key+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_115 /* _Key+Transform.swift */; };
+		OBJ_287 /* _Measure+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_116 /* _Measure+Transform.swift */; };
+		OBJ_288 /* _MeasureRepeat+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_117 /* _MeasureRepeat+Transform.swift */; };
+		OBJ_289 /* _Note+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_118 /* _Note+Transform.swift */; };
+		OBJ_290 /* _NoteDuration+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_119 /* _NoteDuration+Transform.swift */; };
+		OBJ_291 /* _Staff+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_120 /* _Staff+Transform.swift */; };
+		OBJ_292 /* _StaffLocation+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_121 /* _StaffLocation+Transform.swift */; };
+		OBJ_293 /* _TimeSignature+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_122 /* _TimeSignature+Transform.swift */; };
+		OBJ_294 /* _Tone+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_123 /* _Tone+Transform.swift */; };
+		OBJ_295 /* _Tuplet+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_124 /* _Tuplet+Transform.swift */; };
+		OBJ_296 /* _Types+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_125 /* _Types+Transform.swift */; };
+		OBJ_298 /* MusicNotationCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_146 /* MusicNotationCore.framework */; };
+		OBJ_299 /* SwiftProtobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_149 /* SwiftProtobuf.framework */; };
+		OBJ_300 /* PluginLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_147 /* PluginLibrary.framework */; };
+		OBJ_309 /* _ClefTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_128 /* _ClefTests.swift */; };
+		OBJ_310 /* _IntervalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_129 /* _IntervalTests.swift */; };
+		OBJ_311 /* _KeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_130 /* _KeyTests.swift */; };
+		OBJ_312 /* _MeasureRepeatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_131 /* _MeasureRepeatTests.swift */; };
+		OBJ_313 /* _MeasureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_132 /* _MeasureTests.swift */; };
+		OBJ_314 /* _NoteDurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_133 /* _NoteDurationTests.swift */; };
+		OBJ_315 /* _NoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_134 /* _NoteTests.swift */; };
+		OBJ_316 /* _StaffLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_135 /* _StaffLocationTests.swift */; };
+		OBJ_317 /* _StaffTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_136 /* _StaffTests.swift */; };
+		OBJ_318 /* _TimeSignatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_137 /* _TimeSignatureTests.swift */; };
+		OBJ_319 /* _ToneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_138 /* _ToneTests.swift */; };
+		OBJ_320 /* _TupletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_139 /* _TupletTests.swift */; };
+		OBJ_321 /* _Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_140 /* _Types.swift */; };
+		OBJ_322 /* MusicNotationKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_141 /* MusicNotationKitTests.swift */; };
+		OBJ_323 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_142 /* TestHelpers.swift */; };
+		OBJ_325 /* MusicNotationCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_146 /* MusicNotationCore.framework */; };
+		OBJ_326 /* SwiftProtobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_149 /* SwiftProtobuf.framework */; };
+		OBJ_327 /* PluginLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_147 /* PluginLibrary.framework */; };
+		OBJ_328 /* MusicNotationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_150 /* MusicNotationKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2480FE1E1E6FE98B00F21B8A /* PBXContainerItemProxy */ = {
+		2480FE361E73A06400F21B8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = OBJ_176;
+			remoteGlobalIDString = OBJ_188;
 			remoteInfo = SwiftProtobuf;
 		};
-		2480FE1F1E6FE98B00F21B8A /* PBXContainerItemProxy */ = {
+		2480FE371E73A06400F21B8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = OBJ_176;
+			remoteGlobalIDString = OBJ_188;
 			remoteInfo = SwiftProtobuf;
 		};
-		2480FE201E6FE98B00F21B8A /* PBXContainerItemProxy */ = {
+		2480FE381E73A06400F21B8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = OBJ_166;
+			remoteGlobalIDString = OBJ_178;
 			remoteInfo = PluginLibrary;
 		};
-		2480FE211E6FE98B00F21B8A /* PBXContainerItemProxy */ = {
+		2480FE391E73A06400F21B8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = OBJ_140;
+			remoteGlobalIDString = OBJ_152;
 			remoteInfo = MusicNotationCore;
 		};
-		2480FE221E6FE98B00F21B8A /* PBXContainerItemProxy */ = {
+		2480FE3A1E73A06400F21B8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = OBJ_176;
+			remoteGlobalIDString = OBJ_188;
 			remoteInfo = SwiftProtobuf;
 		};
-		2480FE231E6FE98B00F21B8A /* PBXContainerItemProxy */ = {
+		2480FE3B1E73A06400F21B8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = OBJ_166;
+			remoteGlobalIDString = OBJ_178;
 			remoteInfo = PluginLibrary;
 		};
-		2480FE241E6FE98B00F21B8A /* PBXContainerItemProxy */ = {
+		2480FE3C1E73A06400F21B8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = OBJ_140;
+			remoteGlobalIDString = OBJ_152;
 			remoteInfo = MusicNotationCore;
 		};
-		2480FE251E6FE98B00F21B8A /* PBXContainerItemProxy */ = {
+		2480FE3D1E73A06400F21B8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = OBJ_176;
+			remoteGlobalIDString = OBJ_188;
 			remoteInfo = SwiftProtobuf;
 		};
-		2480FE261E6FE98B00F21B8A /* PBXContainerItemProxy */ = {
+		2480FE3E1E73A06400F21B8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = OBJ_166;
+			remoteGlobalIDString = OBJ_178;
 			remoteInfo = PluginLibrary;
 		};
-		2480FE271E6FE98B00F21B8A /* PBXContainerItemProxy */ = {
+		2480FE3F1E73A06400F21B8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = OBJ_253;
+			remoteGlobalIDString = OBJ_265;
 			remoteInfo = MusicNotationKit;
 		};
 /* End PBXContainerItemProxy section */
@@ -233,20 +245,32 @@
 		OBJ_123 /* _Tone+Transform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_Tone+Transform.swift"; sourceTree = "<group>"; };
 		OBJ_124 /* _Tuplet+Transform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_Tuplet+Transform.swift"; sourceTree = "<group>"; };
 		OBJ_125 /* _Types+Transform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_Types+Transform.swift"; sourceTree = "<group>"; };
-		OBJ_128 /* _KeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _KeyTests.swift; sourceTree = "<group>"; };
-		OBJ_129 /* MusicNotationKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicNotationKitTests.swift; sourceTree = "<group>"; };
+		OBJ_128 /* _ClefTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _ClefTests.swift; sourceTree = "<group>"; };
+		OBJ_129 /* _IntervalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _IntervalTests.swift; sourceTree = "<group>"; };
 		OBJ_13 /* Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
-		OBJ_130 /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
-		OBJ_131 /* Bin */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Bin; sourceTree = SOURCE_ROOT; };
-		OBJ_132 /* Proto */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Proto; sourceTree = SOURCE_ROOT; };
-		OBJ_134 /* MusicNotationCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MusicNotationCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_135 /* PluginLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PluginLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_136 /* protoc-gen-swift */ = {isa = PBXFileReference; lastKnownFileType = text; path = "protoc-gen-swift"; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_137 /* SwiftProtobuf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftProtobuf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_138 /* MusicNotationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MusicNotationKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_139 /* MusicNotationKitTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = MusicNotationKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_130 /* _KeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _KeyTests.swift; sourceTree = "<group>"; };
+		OBJ_131 /* _MeasureRepeatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _MeasureRepeatTests.swift; sourceTree = "<group>"; };
+		OBJ_132 /* _MeasureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _MeasureTests.swift; sourceTree = "<group>"; };
+		OBJ_133 /* _NoteDurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _NoteDurationTests.swift; sourceTree = "<group>"; };
+		OBJ_134 /* _NoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _NoteTests.swift; sourceTree = "<group>"; };
+		OBJ_135 /* _StaffLocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _StaffLocationTests.swift; sourceTree = "<group>"; };
+		OBJ_136 /* _StaffTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _StaffTests.swift; sourceTree = "<group>"; };
+		OBJ_137 /* _TimeSignatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _TimeSignatureTests.swift; sourceTree = "<group>"; };
+		OBJ_138 /* _ToneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _ToneTests.swift; sourceTree = "<group>"; };
+		OBJ_139 /* _TupletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _TupletTests.swift; sourceTree = "<group>"; };
 		OBJ_14 /* Measure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measure.swift; sourceTree = "<group>"; };
+		OBJ_140 /* _Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _Types.swift; sourceTree = "<group>"; };
+		OBJ_141 /* MusicNotationKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicNotationKitTests.swift; sourceTree = "<group>"; };
+		OBJ_142 /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
+		OBJ_143 /* Bin */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Bin; sourceTree = SOURCE_ROOT; };
+		OBJ_144 /* Proto */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Proto; sourceTree = SOURCE_ROOT; };
+		OBJ_146 /* MusicNotationCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MusicNotationCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_147 /* PluginLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PluginLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_148 /* protoc-gen-swift */ = {isa = PBXFileReference; lastKnownFileType = text; path = "protoc-gen-swift"; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_149 /* SwiftProtobuf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftProtobuf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_15 /* MeasureDurationValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureDurationValidator.swift; sourceTree = "<group>"; };
+		OBJ_150 /* MusicNotationKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MusicNotationKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_151 /* MusicNotationKitTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = MusicNotationKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_16 /* MeasureRepeat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureRepeat.swift; sourceTree = "<group>"; };
 		OBJ_17 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		OBJ_18 /* NoteCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCollection.swift; sourceTree = "<group>"; };
@@ -331,55 +355,55 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_165 /* Frameworks */ = {
+		OBJ_177 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_173 /* Frameworks */ = {
+		OBJ_185 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_174 /* SwiftProtobuf.framework in Frameworks */,
+				OBJ_186 /* SwiftProtobuf.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_195 /* Frameworks */ = {
+		OBJ_207 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_196 /* SwiftProtobuf.framework in Frameworks */,
-				OBJ_197 /* PluginLibrary.framework in Frameworks */,
+				OBJ_208 /* SwiftProtobuf.framework in Frameworks */,
+				OBJ_209 /* PluginLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_252 /* Frameworks */ = {
+		OBJ_264 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_285 /* Frameworks */ = {
+		OBJ_297 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_286 /* MusicNotationCore.framework in Frameworks */,
-				OBJ_287 /* SwiftProtobuf.framework in Frameworks */,
-				OBJ_288 /* PluginLibrary.framework in Frameworks */,
+				OBJ_298 /* MusicNotationCore.framework in Frameworks */,
+				OBJ_299 /* SwiftProtobuf.framework in Frameworks */,
+				OBJ_300 /* PluginLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_300 /* Frameworks */ = {
+		OBJ_324 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_301 /* MusicNotationCore.framework in Frameworks */,
-				OBJ_302 /* SwiftProtobuf.framework in Frameworks */,
-				OBJ_303 /* PluginLibrary.framework in Frameworks */,
-				OBJ_304 /* MusicNotationKit.framework in Frameworks */,
+				OBJ_325 /* MusicNotationCore.framework in Frameworks */,
+				OBJ_326 /* SwiftProtobuf.framework in Frameworks */,
+				OBJ_327 /* PluginLibrary.framework in Frameworks */,
+				OBJ_328 /* MusicNotationKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,23 +449,35 @@
 		OBJ_127 /* MusicNotationKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_128 /* _KeyTests.swift */,
-				OBJ_129 /* MusicNotationKitTests.swift */,
-				OBJ_130 /* TestHelpers.swift */,
+				OBJ_128 /* _ClefTests.swift */,
+				OBJ_129 /* _IntervalTests.swift */,
+				OBJ_130 /* _KeyTests.swift */,
+				OBJ_131 /* _MeasureRepeatTests.swift */,
+				OBJ_132 /* _MeasureTests.swift */,
+				OBJ_133 /* _NoteDurationTests.swift */,
+				OBJ_134 /* _NoteTests.swift */,
+				OBJ_135 /* _StaffLocationTests.swift */,
+				OBJ_136 /* _StaffTests.swift */,
+				OBJ_137 /* _TimeSignatureTests.swift */,
+				OBJ_138 /* _ToneTests.swift */,
+				OBJ_139 /* _TupletTests.swift */,
+				OBJ_140 /* _Types.swift */,
+				OBJ_141 /* MusicNotationKitTests.swift */,
+				OBJ_142 /* TestHelpers.swift */,
 			);
 			name = MusicNotationKitTests;
 			path = Tests/MusicNotationKitTests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_133 /* Products */ = {
+		OBJ_145 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_134 /* MusicNotationCore.framework */,
-				OBJ_135 /* PluginLibrary.framework */,
-				OBJ_136 /* protoc-gen-swift */,
-				OBJ_137 /* SwiftProtobuf.framework */,
-				OBJ_138 /* MusicNotationKit.framework */,
-				OBJ_139 /* MusicNotationKitTests.xctest */,
+				OBJ_146 /* MusicNotationCore.framework */,
+				OBJ_147 /* PluginLibrary.framework */,
+				OBJ_148 /* protoc-gen-swift */,
+				OBJ_149 /* SwiftProtobuf.framework */,
+				OBJ_150 /* MusicNotationKit.framework */,
+				OBJ_151 /* MusicNotationKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -539,9 +575,9 @@
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
 				OBJ_126 /* Tests */,
-				OBJ_131 /* Bin */,
-				OBJ_132 /* Proto */,
-				OBJ_133 /* Products */,
+				OBJ_143 /* Bin */,
+				OBJ_144 /* Proto */,
+				OBJ_145 /* Products */,
 			);
 			name = "";
 			sourceTree = "<group>";
@@ -620,12 +656,12 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		OBJ_140 /* MusicNotationCore */ = {
+		OBJ_152 /* MusicNotationCore */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_141 /* Build configuration list for PBXNativeTarget "MusicNotationCore" */;
+			buildConfigurationList = OBJ_153 /* Build configuration list for PBXNativeTarget "MusicNotationCore" */;
 			buildPhases = (
-				OBJ_144 /* Sources */,
-				OBJ_165 /* Frameworks */,
+				OBJ_156 /* Sources */,
+				OBJ_177 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -633,32 +669,32 @@
 			);
 			name = MusicNotationCore;
 			productName = MusicNotationCore;
-			productReference = OBJ_134 /* MusicNotationCore.framework */;
+			productReference = OBJ_146 /* MusicNotationCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		OBJ_166 /* PluginLibrary */ = {
+		OBJ_178 /* PluginLibrary */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_167 /* Build configuration list for PBXNativeTarget "PluginLibrary" */;
+			buildConfigurationList = OBJ_179 /* Build configuration list for PBXNativeTarget "PluginLibrary" */;
 			buildPhases = (
-				OBJ_170 /* Sources */,
-				OBJ_173 /* Frameworks */,
+				OBJ_182 /* Sources */,
+				OBJ_185 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_175 /* PBXTargetDependency */,
+				OBJ_187 /* PBXTargetDependency */,
 			);
 			name = PluginLibrary;
 			productName = PluginLibrary;
-			productReference = OBJ_135 /* PluginLibrary.framework */;
+			productReference = OBJ_147 /* PluginLibrary.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		OBJ_176 /* SwiftProtobuf */ = {
+		OBJ_188 /* SwiftProtobuf */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_200 /* Build configuration list for PBXNativeTarget "SwiftProtobuf" */;
+			buildConfigurationList = OBJ_212 /* Build configuration list for PBXNativeTarget "SwiftProtobuf" */;
 			buildPhases = (
-				OBJ_203 /* Sources */,
-				OBJ_252 /* Frameworks */,
+				OBJ_215 /* Sources */,
+				OBJ_264 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -666,64 +702,64 @@
 			);
 			name = SwiftProtobuf;
 			productName = SwiftProtobuf;
-			productReference = OBJ_137 /* SwiftProtobuf.framework */;
+			productReference = OBJ_149 /* SwiftProtobuf.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		OBJ_177 /* protoc-gen-swift */ = {
+		OBJ_189 /* protoc-gen-swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_178 /* Build configuration list for PBXNativeTarget "protoc-gen-swift" */;
+			buildConfigurationList = OBJ_190 /* Build configuration list for PBXNativeTarget "protoc-gen-swift" */;
 			buildPhases = (
-				OBJ_181 /* Sources */,
-				OBJ_195 /* Frameworks */,
+				OBJ_193 /* Sources */,
+				OBJ_207 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_198 /* PBXTargetDependency */,
-				OBJ_199 /* PBXTargetDependency */,
+				OBJ_210 /* PBXTargetDependency */,
+				OBJ_211 /* PBXTargetDependency */,
 			);
 			name = "protoc-gen-swift";
 			productName = protoc_gen_swift;
-			productReference = OBJ_136 /* protoc-gen-swift */;
+			productReference = OBJ_148 /* protoc-gen-swift */;
 			productType = "com.apple.product-type.tool";
 		};
-		OBJ_253 /* MusicNotationKit */ = {
+		OBJ_265 /* MusicNotationKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_254 /* Build configuration list for PBXNativeTarget "MusicNotationKit" */;
+			buildConfigurationList = OBJ_266 /* Build configuration list for PBXNativeTarget "MusicNotationKit" */;
 			buildPhases = (
-				OBJ_257 /* Sources */,
-				OBJ_285 /* Frameworks */,
+				OBJ_269 /* Sources */,
+				OBJ_297 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_289 /* PBXTargetDependency */,
-				OBJ_290 /* PBXTargetDependency */,
-				OBJ_291 /* PBXTargetDependency */,
+				OBJ_301 /* PBXTargetDependency */,
+				OBJ_302 /* PBXTargetDependency */,
+				OBJ_303 /* PBXTargetDependency */,
 			);
 			name = MusicNotationKit;
 			productName = MusicNotationKit;
-			productReference = OBJ_138 /* MusicNotationKit.framework */;
+			productReference = OBJ_150 /* MusicNotationKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		OBJ_292 /* MusicNotationKitTests */ = {
+		OBJ_304 /* MusicNotationKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_293 /* Build configuration list for PBXNativeTarget "MusicNotationKitTests" */;
+			buildConfigurationList = OBJ_305 /* Build configuration list for PBXNativeTarget "MusicNotationKitTests" */;
 			buildPhases = (
-				OBJ_296 /* Sources */,
-				OBJ_300 /* Frameworks */,
+				OBJ_308 /* Sources */,
+				OBJ_324 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_305 /* PBXTargetDependency */,
-				OBJ_306 /* PBXTargetDependency */,
-				OBJ_307 /* PBXTargetDependency */,
-				OBJ_308 /* PBXTargetDependency */,
+				OBJ_329 /* PBXTargetDependency */,
+				OBJ_330 /* PBXTargetDependency */,
+				OBJ_331 /* PBXTargetDependency */,
+				OBJ_332 /* PBXTargetDependency */,
 			);
 			name = MusicNotationKitTests;
 			productName = MusicNotationKitTests;
-			productReference = OBJ_139 /* MusicNotationKitTests.xctest */;
+			productReference = OBJ_151 /* MusicNotationKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -742,233 +778,245 @@
 				en,
 			);
 			mainGroup = OBJ_5 /*  */;
-			productRefGroup = OBJ_133 /* Products */;
+			productRefGroup = OBJ_145 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				OBJ_140 /* MusicNotationCore */,
-				OBJ_166 /* PluginLibrary */,
-				OBJ_177 /* protoc-gen-swift */,
-				OBJ_176 /* SwiftProtobuf */,
-				OBJ_253 /* MusicNotationKit */,
-				OBJ_292 /* MusicNotationKitTests */,
+				OBJ_152 /* MusicNotationCore */,
+				OBJ_178 /* PluginLibrary */,
+				OBJ_189 /* protoc-gen-swift */,
+				OBJ_188 /* SwiftProtobuf */,
+				OBJ_265 /* MusicNotationKit */,
+				OBJ_304 /* MusicNotationKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_144 /* Sources */ = {
+		OBJ_156 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_145 /* Clef.swift in Sources */,
-				OBJ_146 /* Enharmonic.swift in Sources */,
-				OBJ_147 /* ImmutableMeasure.swift in Sources */,
-				OBJ_148 /* Interval.swift in Sources */,
-				OBJ_149 /* Key.swift in Sources */,
-				OBJ_150 /* Measure.swift in Sources */,
-				OBJ_151 /* MeasureDurationValidator.swift in Sources */,
-				OBJ_152 /* MeasureRepeat.swift in Sources */,
-				OBJ_153 /* Note.swift in Sources */,
-				OBJ_154 /* NoteCollection.swift in Sources */,
-				OBJ_155 /* NoteDuration.swift in Sources */,
-				OBJ_156 /* NoteHolder.swift in Sources */,
-				OBJ_157 /* RepeatedMeasure.swift in Sources */,
-				OBJ_158 /* Staff.swift in Sources */,
-				OBJ_159 /* StaffLocation.swift in Sources */,
-				OBJ_160 /* SwiftHelpers.swift in Sources */,
-				OBJ_161 /* TimeSignature.swift in Sources */,
-				OBJ_162 /* Tone.swift in Sources */,
-				OBJ_163 /* Tuplet.swift in Sources */,
-				OBJ_164 /* Types.swift in Sources */,
+				OBJ_157 /* Clef.swift in Sources */,
+				OBJ_158 /* Enharmonic.swift in Sources */,
+				OBJ_159 /* ImmutableMeasure.swift in Sources */,
+				OBJ_160 /* Interval.swift in Sources */,
+				OBJ_161 /* Key.swift in Sources */,
+				OBJ_162 /* Measure.swift in Sources */,
+				OBJ_163 /* MeasureDurationValidator.swift in Sources */,
+				OBJ_164 /* MeasureRepeat.swift in Sources */,
+				OBJ_165 /* Note.swift in Sources */,
+				OBJ_166 /* NoteCollection.swift in Sources */,
+				OBJ_167 /* NoteDuration.swift in Sources */,
+				OBJ_168 /* NoteHolder.swift in Sources */,
+				OBJ_169 /* RepeatedMeasure.swift in Sources */,
+				OBJ_170 /* Staff.swift in Sources */,
+				OBJ_171 /* StaffLocation.swift in Sources */,
+				OBJ_172 /* SwiftHelpers.swift in Sources */,
+				OBJ_173 /* TimeSignature.swift in Sources */,
+				OBJ_174 /* Tone.swift in Sources */,
+				OBJ_175 /* Tuplet.swift in Sources */,
+				OBJ_176 /* Types.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_170 /* Sources */ = {
+		OBJ_182 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_171 /* descriptor.pb.swift in Sources */,
-				OBJ_172 /* plugin.pb.swift in Sources */,
+				OBJ_183 /* descriptor.pb.swift in Sources */,
+				OBJ_184 /* plugin.pb.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_181 /* Sources */ = {
+		OBJ_193 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_182 /* CodePrinter.swift in Sources */,
-				OBJ_183 /* Context.swift in Sources */,
-				OBJ_184 /* EnumGenerator.swift in Sources */,
-				OBJ_185 /* ExtensionGenerator.swift in Sources */,
-				OBJ_186 /* FileGenerator.swift in Sources */,
-				OBJ_187 /* FileIo.swift in Sources */,
-				OBJ_188 /* main.swift in Sources */,
-				OBJ_189 /* MessageFieldGenerator.swift in Sources */,
-				OBJ_190 /* MessageGenerator.swift in Sources */,
-				OBJ_191 /* OneofGenerator.swift in Sources */,
-				OBJ_192 /* ReservedWords.swift in Sources */,
-				OBJ_193 /* StringUtils.swift in Sources */,
-				OBJ_194 /* Version.swift in Sources */,
+				OBJ_194 /* CodePrinter.swift in Sources */,
+				OBJ_195 /* Context.swift in Sources */,
+				OBJ_196 /* EnumGenerator.swift in Sources */,
+				OBJ_197 /* ExtensionGenerator.swift in Sources */,
+				OBJ_198 /* FileGenerator.swift in Sources */,
+				OBJ_199 /* FileIo.swift in Sources */,
+				OBJ_200 /* main.swift in Sources */,
+				OBJ_201 /* MessageFieldGenerator.swift in Sources */,
+				OBJ_202 /* MessageGenerator.swift in Sources */,
+				OBJ_203 /* OneofGenerator.swift in Sources */,
+				OBJ_204 /* ReservedWords.swift in Sources */,
+				OBJ_205 /* StringUtils.swift in Sources */,
+				OBJ_206 /* Version.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_203 /* Sources */ = {
+		OBJ_215 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_204 /* api.pb.swift in Sources */,
-				OBJ_205 /* DebugDescriptionVisitor.swift in Sources */,
-				OBJ_206 /* duration.pb.swift in Sources */,
-				OBJ_207 /* empty.pb.swift in Sources */,
-				OBJ_208 /* Enum.swift in Sources */,
-				OBJ_209 /* Errors.swift in Sources */,
-				OBJ_210 /* ExtensibleMessage.swift in Sources */,
-				OBJ_211 /* ExtensionFields.swift in Sources */,
-				OBJ_212 /* ExtensionFieldValueSet.swift in Sources */,
-				OBJ_213 /* ExtensionSet.swift in Sources */,
-				OBJ_214 /* field_mask.pb.swift in Sources */,
-				OBJ_215 /* FieldDecoder.swift in Sources */,
-				OBJ_216 /* FieldNameMap.swift in Sources */,
-				OBJ_217 /* FieldTag.swift in Sources */,
-				OBJ_218 /* FieldTypes.swift in Sources */,
-				OBJ_219 /* Google_Protobuf_Any.swift in Sources */,
-				OBJ_220 /* Google_Protobuf_Duration_Extensions.swift in Sources */,
-				OBJ_221 /* Google_Protobuf_FieldMask_Extensions.swift in Sources */,
-				OBJ_222 /* Google_Protobuf_Struct.swift in Sources */,
-				OBJ_223 /* Google_Protobuf_Timestamp_Extensions.swift in Sources */,
-				OBJ_224 /* Google_Protobuf_Wrappers+Extensions.swift in Sources */,
-				OBJ_225 /* HashVisitor.swift in Sources */,
-				OBJ_226 /* JSONDecoder.swift in Sources */,
-				OBJ_227 /* JSONEncoder.swift in Sources */,
-				OBJ_228 /* JSONScanner.swift in Sources */,
-				OBJ_229 /* JSONToken.swift in Sources */,
-				OBJ_230 /* JSONTypeAdditions.swift in Sources */,
-				OBJ_231 /* Map.swift in Sources */,
-				OBJ_232 /* Message.swift in Sources */,
-				OBJ_233 /* MessageExtension.swift in Sources */,
-				OBJ_234 /* MirrorVisitor.swift in Sources */,
-				OBJ_235 /* OneofEnum.swift in Sources */,
-				OBJ_236 /* ProtobufDecoder.swift in Sources */,
-				OBJ_237 /* ProtobufEncoder.swift in Sources */,
-				OBJ_238 /* ProtobufEncodingSizeVisitor.swift in Sources */,
-				OBJ_239 /* ProtobufEncodingVisitor.swift in Sources */,
-				OBJ_240 /* ProtobufTypeAdditions.swift in Sources */,
-				OBJ_241 /* ProtoNameProviding.swift in Sources */,
-				OBJ_242 /* ProtoNameResolvers.swift in Sources */,
-				OBJ_243 /* source_context.pb.swift in Sources */,
-				OBJ_244 /* timestamp.pb.swift in Sources */,
-				OBJ_245 /* type.pb.swift in Sources */,
-				OBJ_246 /* UnknownStorage.swift in Sources */,
-				OBJ_247 /* Varint.swift in Sources */,
-				OBJ_248 /* Visitor.swift in Sources */,
-				OBJ_249 /* WireFormat.swift in Sources */,
-				OBJ_250 /* wrappers.pb.swift in Sources */,
-				OBJ_251 /* ZigZag.swift in Sources */,
+				OBJ_216 /* api.pb.swift in Sources */,
+				OBJ_217 /* DebugDescriptionVisitor.swift in Sources */,
+				OBJ_218 /* duration.pb.swift in Sources */,
+				OBJ_219 /* empty.pb.swift in Sources */,
+				OBJ_220 /* Enum.swift in Sources */,
+				OBJ_221 /* Errors.swift in Sources */,
+				OBJ_222 /* ExtensibleMessage.swift in Sources */,
+				OBJ_223 /* ExtensionFields.swift in Sources */,
+				OBJ_224 /* ExtensionFieldValueSet.swift in Sources */,
+				OBJ_225 /* ExtensionSet.swift in Sources */,
+				OBJ_226 /* field_mask.pb.swift in Sources */,
+				OBJ_227 /* FieldDecoder.swift in Sources */,
+				OBJ_228 /* FieldNameMap.swift in Sources */,
+				OBJ_229 /* FieldTag.swift in Sources */,
+				OBJ_230 /* FieldTypes.swift in Sources */,
+				OBJ_231 /* Google_Protobuf_Any.swift in Sources */,
+				OBJ_232 /* Google_Protobuf_Duration_Extensions.swift in Sources */,
+				OBJ_233 /* Google_Protobuf_FieldMask_Extensions.swift in Sources */,
+				OBJ_234 /* Google_Protobuf_Struct.swift in Sources */,
+				OBJ_235 /* Google_Protobuf_Timestamp_Extensions.swift in Sources */,
+				OBJ_236 /* Google_Protobuf_Wrappers+Extensions.swift in Sources */,
+				OBJ_237 /* HashVisitor.swift in Sources */,
+				OBJ_238 /* JSONDecoder.swift in Sources */,
+				OBJ_239 /* JSONEncoder.swift in Sources */,
+				OBJ_240 /* JSONScanner.swift in Sources */,
+				OBJ_241 /* JSONToken.swift in Sources */,
+				OBJ_242 /* JSONTypeAdditions.swift in Sources */,
+				OBJ_243 /* Map.swift in Sources */,
+				OBJ_244 /* Message.swift in Sources */,
+				OBJ_245 /* MessageExtension.swift in Sources */,
+				OBJ_246 /* MirrorVisitor.swift in Sources */,
+				OBJ_247 /* OneofEnum.swift in Sources */,
+				OBJ_248 /* ProtobufDecoder.swift in Sources */,
+				OBJ_249 /* ProtobufEncoder.swift in Sources */,
+				OBJ_250 /* ProtobufEncodingSizeVisitor.swift in Sources */,
+				OBJ_251 /* ProtobufEncodingVisitor.swift in Sources */,
+				OBJ_252 /* ProtobufTypeAdditions.swift in Sources */,
+				OBJ_253 /* ProtoNameProviding.swift in Sources */,
+				OBJ_254 /* ProtoNameResolvers.swift in Sources */,
+				OBJ_255 /* source_context.pb.swift in Sources */,
+				OBJ_256 /* timestamp.pb.swift in Sources */,
+				OBJ_257 /* type.pb.swift in Sources */,
+				OBJ_258 /* UnknownStorage.swift in Sources */,
+				OBJ_259 /* Varint.swift in Sources */,
+				OBJ_260 /* Visitor.swift in Sources */,
+				OBJ_261 /* WireFormat.swift in Sources */,
+				OBJ_262 /* wrappers.pb.swift in Sources */,
+				OBJ_263 /* ZigZag.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_257 /* Sources */ = {
+		OBJ_269 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_258 /* MusicNotationKit.swift in Sources */,
-				OBJ_259 /* _Clef.pb.swift in Sources */,
-				OBJ_260 /* _Interval.pb.swift in Sources */,
-				OBJ_261 /* _Key.pb.swift in Sources */,
-				OBJ_262 /* _Measure.pb.swift in Sources */,
-				OBJ_263 /* _MeasureRepeat.pb.swift in Sources */,
-				OBJ_264 /* _Note.pb.swift in Sources */,
-				OBJ_265 /* _NoteDuration.pb.swift in Sources */,
-				OBJ_266 /* _Staff.pb.swift in Sources */,
-				OBJ_267 /* _StaffLocation.pb.swift in Sources */,
-				OBJ_268 /* _TimeSignature.pb.swift in Sources */,
-				OBJ_269 /* _Tone.pb.swift in Sources */,
-				OBJ_270 /* _Tuplet.pb.swift in Sources */,
-				OBJ_271 /* _Types.pb.swift in Sources */,
-				OBJ_272 /* _Clef+Transform.swift in Sources */,
-				OBJ_273 /* _Interval+Transform.swift in Sources */,
-				OBJ_274 /* _Key+Transform.swift in Sources */,
-				OBJ_275 /* _Measure+Transform.swift in Sources */,
-				OBJ_276 /* _MeasureRepeat+Transform.swift in Sources */,
-				OBJ_277 /* _Note+Transform.swift in Sources */,
-				OBJ_278 /* _NoteDuration+Transform.swift in Sources */,
-				OBJ_279 /* _Staff+Transform.swift in Sources */,
-				OBJ_280 /* _StaffLocation+Transform.swift in Sources */,
-				OBJ_281 /* _TimeSignature+Transform.swift in Sources */,
-				OBJ_282 /* _Tone+Transform.swift in Sources */,
-				OBJ_283 /* _Tuplet+Transform.swift in Sources */,
-				OBJ_284 /* _Types+Transform.swift in Sources */,
+				OBJ_270 /* MusicNotationKit.swift in Sources */,
+				OBJ_271 /* _Clef.pb.swift in Sources */,
+				OBJ_272 /* _Interval.pb.swift in Sources */,
+				OBJ_273 /* _Key.pb.swift in Sources */,
+				OBJ_274 /* _Measure.pb.swift in Sources */,
+				OBJ_275 /* _MeasureRepeat.pb.swift in Sources */,
+				OBJ_276 /* _Note.pb.swift in Sources */,
+				OBJ_277 /* _NoteDuration.pb.swift in Sources */,
+				OBJ_278 /* _Staff.pb.swift in Sources */,
+				OBJ_279 /* _StaffLocation.pb.swift in Sources */,
+				OBJ_280 /* _TimeSignature.pb.swift in Sources */,
+				OBJ_281 /* _Tone.pb.swift in Sources */,
+				OBJ_282 /* _Tuplet.pb.swift in Sources */,
+				OBJ_283 /* _Types.pb.swift in Sources */,
+				OBJ_284 /* _Clef+Transform.swift in Sources */,
+				OBJ_285 /* _Interval+Transform.swift in Sources */,
+				OBJ_286 /* _Key+Transform.swift in Sources */,
+				OBJ_287 /* _Measure+Transform.swift in Sources */,
+				OBJ_288 /* _MeasureRepeat+Transform.swift in Sources */,
+				OBJ_289 /* _Note+Transform.swift in Sources */,
+				OBJ_290 /* _NoteDuration+Transform.swift in Sources */,
+				OBJ_291 /* _Staff+Transform.swift in Sources */,
+				OBJ_292 /* _StaffLocation+Transform.swift in Sources */,
+				OBJ_293 /* _TimeSignature+Transform.swift in Sources */,
+				OBJ_294 /* _Tone+Transform.swift in Sources */,
+				OBJ_295 /* _Tuplet+Transform.swift in Sources */,
+				OBJ_296 /* _Types+Transform.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_296 /* Sources */ = {
+		OBJ_308 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_297 /* _KeyTests.swift in Sources */,
-				OBJ_298 /* MusicNotationKitTests.swift in Sources */,
-				OBJ_299 /* TestHelpers.swift in Sources */,
+				OBJ_309 /* _ClefTests.swift in Sources */,
+				OBJ_310 /* _IntervalTests.swift in Sources */,
+				OBJ_311 /* _KeyTests.swift in Sources */,
+				OBJ_312 /* _MeasureRepeatTests.swift in Sources */,
+				OBJ_313 /* _MeasureTests.swift in Sources */,
+				OBJ_314 /* _NoteDurationTests.swift in Sources */,
+				OBJ_315 /* _NoteTests.swift in Sources */,
+				OBJ_316 /* _StaffLocationTests.swift in Sources */,
+				OBJ_317 /* _StaffTests.swift in Sources */,
+				OBJ_318 /* _TimeSignatureTests.swift in Sources */,
+				OBJ_319 /* _ToneTests.swift in Sources */,
+				OBJ_320 /* _TupletTests.swift in Sources */,
+				OBJ_321 /* _Types.swift in Sources */,
+				OBJ_322 /* MusicNotationKitTests.swift in Sources */,
+				OBJ_323 /* TestHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_175 /* PBXTargetDependency */ = {
+		OBJ_187 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = OBJ_176 /* SwiftProtobuf */;
-			targetProxy = 2480FE1E1E6FE98B00F21B8A /* PBXContainerItemProxy */;
+			target = OBJ_188 /* SwiftProtobuf */;
+			targetProxy = 2480FE361E73A06400F21B8A /* PBXContainerItemProxy */;
 		};
-		OBJ_198 /* PBXTargetDependency */ = {
+		OBJ_210 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = OBJ_176 /* SwiftProtobuf */;
-			targetProxy = 2480FE1F1E6FE98B00F21B8A /* PBXContainerItemProxy */;
+			target = OBJ_188 /* SwiftProtobuf */;
+			targetProxy = 2480FE371E73A06400F21B8A /* PBXContainerItemProxy */;
 		};
-		OBJ_199 /* PBXTargetDependency */ = {
+		OBJ_211 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = OBJ_166 /* PluginLibrary */;
-			targetProxy = 2480FE201E6FE98B00F21B8A /* PBXContainerItemProxy */;
+			target = OBJ_178 /* PluginLibrary */;
+			targetProxy = 2480FE381E73A06400F21B8A /* PBXContainerItemProxy */;
 		};
-		OBJ_289 /* PBXTargetDependency */ = {
+		OBJ_301 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = OBJ_140 /* MusicNotationCore */;
-			targetProxy = 2480FE211E6FE98B00F21B8A /* PBXContainerItemProxy */;
+			target = OBJ_152 /* MusicNotationCore */;
+			targetProxy = 2480FE391E73A06400F21B8A /* PBXContainerItemProxy */;
 		};
-		OBJ_290 /* PBXTargetDependency */ = {
+		OBJ_302 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = OBJ_176 /* SwiftProtobuf */;
-			targetProxy = 2480FE221E6FE98B00F21B8A /* PBXContainerItemProxy */;
+			target = OBJ_188 /* SwiftProtobuf */;
+			targetProxy = 2480FE3A1E73A06400F21B8A /* PBXContainerItemProxy */;
 		};
-		OBJ_291 /* PBXTargetDependency */ = {
+		OBJ_303 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = OBJ_166 /* PluginLibrary */;
-			targetProxy = 2480FE231E6FE98B00F21B8A /* PBXContainerItemProxy */;
+			target = OBJ_178 /* PluginLibrary */;
+			targetProxy = 2480FE3B1E73A06400F21B8A /* PBXContainerItemProxy */;
 		};
-		OBJ_305 /* PBXTargetDependency */ = {
+		OBJ_329 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = OBJ_140 /* MusicNotationCore */;
-			targetProxy = 2480FE241E6FE98B00F21B8A /* PBXContainerItemProxy */;
+			target = OBJ_152 /* MusicNotationCore */;
+			targetProxy = 2480FE3C1E73A06400F21B8A /* PBXContainerItemProxy */;
 		};
-		OBJ_306 /* PBXTargetDependency */ = {
+		OBJ_330 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = OBJ_176 /* SwiftProtobuf */;
-			targetProxy = 2480FE251E6FE98B00F21B8A /* PBXContainerItemProxy */;
+			target = OBJ_188 /* SwiftProtobuf */;
+			targetProxy = 2480FE3D1E73A06400F21B8A /* PBXContainerItemProxy */;
 		};
-		OBJ_307 /* PBXTargetDependency */ = {
+		OBJ_331 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = OBJ_166 /* PluginLibrary */;
-			targetProxy = 2480FE261E6FE98B00F21B8A /* PBXContainerItemProxy */;
+			target = OBJ_178 /* PluginLibrary */;
+			targetProxy = 2480FE3E1E73A06400F21B8A /* PBXContainerItemProxy */;
 		};
-		OBJ_308 /* PBXTargetDependency */ = {
+		OBJ_332 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = OBJ_253 /* MusicNotationKit */;
-			targetProxy = 2480FE271E6FE98B00F21B8A /* PBXContainerItemProxy */;
+			target = OBJ_265 /* MusicNotationKit */;
+			targetProxy = 2480FE3F1E73A06400F21B8A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		OBJ_142 /* Debug */ = {
+		OBJ_154 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -988,7 +1036,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_143 /* Release */ = {
+		OBJ_155 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1008,7 +1056,7 @@
 			};
 			name = Release;
 		};
-		OBJ_168 /* Debug */ = {
+		OBJ_180 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1028,7 +1076,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_169 /* Release */ = {
+		OBJ_181 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1048,7 +1096,7 @@
 			};
 			name = Release;
 		};
-		OBJ_179 /* Debug */ = {
+		OBJ_191 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1066,7 +1114,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_180 /* Release */ = {
+		OBJ_192 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1084,7 +1132,7 @@
 			};
 			name = Release;
 		};
-		OBJ_201 /* Debug */ = {
+		OBJ_213 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1104,7 +1152,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_202 /* Release */ = {
+		OBJ_214 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1124,7 +1172,7 @@
 			};
 			name = Release;
 		};
-		OBJ_255 /* Debug */ = {
+		OBJ_267 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1144,7 +1192,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_256 /* Release */ = {
+		OBJ_268 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1161,40 +1209,6 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				TARGET_NAME = MusicNotationKit;
-			};
-			name = Release;
-		};
-		OBJ_294 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = MusicNotationKit.xcodeproj/MusicNotationKitTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				TARGET_NAME = MusicNotationKitTests;
-			};
-			name = Debug;
-		};
-		OBJ_295 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = MusicNotationKit.xcodeproj/MusicNotationKitTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				TARGET_NAME = MusicNotationKitTests;
 			};
 			name = Release;
 		};
@@ -1220,6 +1234,40 @@
 			};
 			name = Debug;
 		};
+		OBJ_306 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = MusicNotationKit.xcodeproj/MusicNotationKitTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				TARGET_NAME = MusicNotationKitTests;
+			};
+			name = Debug;
+		};
+		OBJ_307 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = MusicNotationKit.xcodeproj/MusicNotationKitTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				TARGET_NAME = MusicNotationKitTests;
+			};
+			name = Release;
+		};
 		OBJ_4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1243,29 +1291,29 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		OBJ_141 /* Build configuration list for PBXNativeTarget "MusicNotationCore" */ = {
+		OBJ_153 /* Build configuration list for PBXNativeTarget "MusicNotationCore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_142 /* Debug */,
-				OBJ_143 /* Release */,
+				OBJ_154 /* Debug */,
+				OBJ_155 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_167 /* Build configuration list for PBXNativeTarget "PluginLibrary" */ = {
+		OBJ_179 /* Build configuration list for PBXNativeTarget "PluginLibrary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_168 /* Debug */,
-				OBJ_169 /* Release */,
+				OBJ_180 /* Debug */,
+				OBJ_181 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_178 /* Build configuration list for PBXNativeTarget "protoc-gen-swift" */ = {
+		OBJ_190 /* Build configuration list for PBXNativeTarget "protoc-gen-swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_179 /* Debug */,
-				OBJ_180 /* Release */,
+				OBJ_191 /* Debug */,
+				OBJ_192 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -1279,29 +1327,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_200 /* Build configuration list for PBXNativeTarget "SwiftProtobuf" */ = {
+		OBJ_212 /* Build configuration list for PBXNativeTarget "SwiftProtobuf" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_201 /* Debug */,
-				OBJ_202 /* Release */,
+				OBJ_213 /* Debug */,
+				OBJ_214 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_254 /* Build configuration list for PBXNativeTarget "MusicNotationKit" */ = {
+		OBJ_266 /* Build configuration list for PBXNativeTarget "MusicNotationKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_255 /* Debug */,
-				OBJ_256 /* Release */,
+				OBJ_267 /* Debug */,
+				OBJ_268 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_293 /* Build configuration list for PBXNativeTarget "MusicNotationKitTests" */ = {
+		OBJ_305 /* Build configuration list for PBXNativeTarget "MusicNotationKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_294 /* Debug */,
-				OBJ_295 /* Release */,
+				OBJ_306 /* Debug */,
+				OBJ_307 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

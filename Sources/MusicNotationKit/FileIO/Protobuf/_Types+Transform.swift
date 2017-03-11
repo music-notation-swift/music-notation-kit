@@ -19,6 +19,24 @@ extension _Octave {
     }
 }
 
+extension Octave {
+    func transform() -> _Octave {
+        switch self {
+        case Octave.octaveNegative1: return .negative1
+        case Octave.octave0: return .oct0
+        case Octave.octave1: return .oct1
+        case Octave.octave2: return .oct2
+        case Octave.octave3: return .oct3
+        case Octave.octave4: return .oct4
+        case Octave.octave5: return .oct5
+        case Octave.octave6: return .oct6
+        case Octave.octave7: return .oct7
+        case Octave.octave8: return .oct8
+        case Octave.octave9: return .oct9
+        }
+    }
+}
+
 extension _NoteLetter {
     func transform() -> NoteLetter {
         switch self {
@@ -30,6 +48,20 @@ extension _NoteLetter {
         case .a: return NoteLetter.a
         case .b: return NoteLetter.b
         default: return NoteLetter.c
+        }
+    }
+}
+
+extension NoteLetter {
+    func transform() -> _NoteLetter {
+        switch self {
+        case NoteLetter.c: return .c
+        case NoteLetter.d: return .d
+        case NoteLetter.e: return .e
+        case NoteLetter.f: return .f
+        case NoteLetter.g: return .g
+        case NoteLetter.a: return .a
+        case NoteLetter.b: return .b
         }
     }
 }
@@ -53,6 +85,18 @@ extension _Accidental {
         case .doubleFlat: return Accidental.doubleFlat
         case .natural: return Accidental.natural
         default: return Accidental.natural
+        }
+    }
+}
+
+extension Accidental {
+    func transform() -> _Accidental {
+        switch self {
+        case Accidental.sharp: return .sharp
+        case Accidental.doubleSharp: return .doubleSharp
+        case Accidental.flat: return .flat
+        case Accidental.doubleFlat: return .doubleFlat
+        case Accidental.natural: return .natural
         }
     }
 }
