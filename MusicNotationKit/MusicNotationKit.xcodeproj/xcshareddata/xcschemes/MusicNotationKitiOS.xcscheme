@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "265113D28EAB2B01E406A73ED157136A"
-               BuildableName = "Pods_MusicNotationKitiOS.framework"
-               BlueprintName = "Pods-MusicNotationKitiOS"
-               ReferencedContainer = "container:../Pods/Pods.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8724159B5BAF16EDA71D0A127958869D"
-               BuildableName = "Pods_MusicNotationKitiOS_MusicNotationKitiOSTests.framework"
-               BlueprintName = "Pods-MusicNotationKitiOS-MusicNotationKitiOSTests"
+               BlueprintIdentifier = "B77CB6E765F1B7C6E7C792D2F4697910"
+               BuildableName = "MusicNotationCore.framework"
+               BlueprintName = "MusicNotationCore"
                ReferencedContainer = "container:../Pods/Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
