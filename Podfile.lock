@@ -1,0 +1,12 @@
+PODS:
+  - MusicNotationCore (0.1.1)
+
+DEPENDENCIES:
+  - MusicNotationCore
+
+SPEC CHECKSUMS:
+  MusicNotationCore: c243dad1dcbc88910099a51dd5e7eca2fe1335a2
+
+PODFILE CHECKSUM: ed27a0d72b95f1f6eb55f91c75d9864c0acd25f8
+
+COCOAPODS: 1.2.0
