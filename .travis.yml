@@ -1,0 +1,10 @@
+language: objective-c
+osx_image: xcode8
+script:
+  set -o pipefail &&
+  xcodebuild build -workspace MusicNotationKit.xcworkspace -scheme MusicNotationKitiOS -sdk iphoneos &&
+  xcodebuild test -workspace MusicNotationKit.xcworkspace -scheme MusicNotationKitiOS -sdk iphoneos
+after_success:
+ - bash <(curl -s https://codecov.io/bash)
+notifications:
+  slack: musicnotationswift:GAuOCY6YxRaZHrDvGRXRF9Im
