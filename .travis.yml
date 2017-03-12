@@ -5,8 +5,8 @@ script:
   pod repo update &&
   pod install &&
   set -o pipefail &&
-  xcodebuild build -workspace MusicNotationKit.xcworkspace -scheme MusicNotationKitiOS -sdk iphoneos &&
-  xcodebuild test -workspace MusicNotationKit.xcworkspace -scheme MusicNotationKitiOS -sdk iphoneos
+  xcodebuild build -workspace MusicNotationKit.xcworkspace -scheme MusicNotationKitiOS -sdk iphoneos -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.3' &&
+  xcodebuild test -workspace MusicNotationKit.xcworkspace -scheme MusicNotationKitiOS -sdk iphoneos -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.3'
 after_success:
  - bash <(curl -s https://codecov.io/bash)
 notifications:
