@@ -69,9 +69,18 @@ extension NoteLetter {
 extension _KeyType {
     func transform() -> KeyType {
         switch self {
-        case .major: return KeyType.major
-        case .minor: return KeyType.minor
-        default: return KeyType.major
+        case .major: return .major
+        case .minor: return .minor
+        default: return .major
+        }
+    }
+}
+
+extension KeyType {
+    func transform() -> _KeyType {
+        switch self {
+        case .major: return .major
+        case .minor: return .minor
         }
     }
 }
