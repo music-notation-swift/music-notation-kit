@@ -2,7 +2,7 @@ import MusicNotationCore
 
 extension _NoteDuration {
     func transformValue() -> NoteDuration.Value? {
-        switch self.value {
+        switch value {
         case .large: return .large
         case .long: return .long
         case .doubleWhole: return .doubleWhole
@@ -20,7 +20,7 @@ extension _NoteDuration {
     }
 
     func transformTimeSignature() -> NoteDuration.TimeSignatureValue? {
-        switch self.timeSignatureValue {
+        switch timeSignatureValue {
         case .tsWhole: return .whole
         case .tsHalf: return .half
         case .tsQuarter: return .quarter
@@ -34,10 +34,10 @@ extension _NoteDuration {
     }
 
     func transform() throws -> NoteDuration {
-        if let value = self.transformValue() {
-            return try NoteDuration(value: value, dotCount: Int(self.dotCount))
+        if let value = transformValue() {
+            return try NoteDuration(value: value, dotCount: Int(dotCount))
         }
-        if let timeSignature = self.transformTimeSignature() {
+        if let timeSignature = transformTimeSignature() {
             return NoteDuration(timeSignatureValue: timeSignature)
         }
         throw NoteDurationTransformError.invalidSetOfParameters
@@ -46,7 +46,7 @@ extension _NoteDuration {
 
 extension NoteDuration {
     func transformValue() -> _NoteDuration.Value {
-        switch self.value {
+        switch value {
         case .large: return .large
         case .long: return .long
         case .doubleWhole: return .doubleWhole
@@ -63,7 +63,7 @@ extension NoteDuration {
     }
 
     func transformTimeSignature() -> _NoteDuration.TimeSignatureValue? {
-        if let timeSignature = self.timeSignatureValue {
+        if let timeSignature = timeSignatureValue {
             switch timeSignature {
             case .whole: return .tsWhole
             case .half: return .tsHalf
@@ -80,9 +80,9 @@ extension NoteDuration {
 
     func transform() -> _NoteDuration {
         var noteDuration = _NoteDuration()
-        noteDuration.value = self.transformValue()
-        noteDuration.dotCount = Int64(self.dotCount)
-        if let timeSignature = self.transformTimeSignature() {
+        noteDuration.value = transformValue()
+        noteDuration.dotCount = Int64(dotCount)
+        if let timeSignature = transformTimeSignature() {
             noteDuration.timeSignatureValue = timeSignature
         }
         return noteDuration

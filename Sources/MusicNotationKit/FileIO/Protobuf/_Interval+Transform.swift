@@ -2,7 +2,7 @@ import MusicNotationCore
 
 extension _Interval {
     func transformQuality() -> MusicNotationCore.IntervalQuality {
-        switch self.quality {
+        switch quality {
         case .augmented: return .augmented
         case .diminished: return .diminished
         case .doublyAugmented: return .doublyAugmented
@@ -14,13 +14,13 @@ extension _Interval {
         }
     }
     func transform() throws -> Interval {
-        return try Interval(quality: self.transformQuality(), number: Int(self.number))
+        return try Interval(quality: transformQuality(), number: Int(number))
     }
 }
 
 extension Interval {
     func transformQuality() -> _Interval.IntervalQuality {
-        switch self.quality {
+        switch quality {
         case .augmented: return .augmented
         case .diminished: return .diminished
         case .doublyAugmented: return .doublyAugmented
@@ -32,8 +32,8 @@ extension Interval {
     }
     func transform() -> _Interval {
         var interval = _Interval()
-        interval.number = Int64(self.number)
-        interval.quality = self.transformQuality()
+        interval.number = Int64(number)
+        interval.quality = transformQuality()
         return interval
     }
 }

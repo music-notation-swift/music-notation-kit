@@ -3,18 +3,18 @@ import MusicNotationCore
 extension _Tone {
     func transform() -> Tone {
         return Tone(
-            noteLetter: self.noteLetter.transform(),
-            accidental: self.accidental.transform(),
-            octave: self.octave.transform())
+            noteLetter: noteLetter.transform(),
+            accidental: accidental.transform(),
+            octave: octave.transform())
     }
 }
 
 extension Tone {
     func transform() -> _Tone {
         var tone = _Tone()
-        tone.noteLetter = self.noteLetter.transform()
-        tone.accidental = self.accidental.transform()
-        tone.octave = self.octave.transform()
+        tone.noteLetter = noteLetter.transform()
+        tone.accidental = accidental.transform()
+        tone.octave = octave.transform()
         return tone
     }
 }

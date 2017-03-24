@@ -3,18 +3,18 @@ import MusicNotationCore
 extension _Key {
     func transform() -> Key {
         return Key(
-            noteLetter: self.noteLetter.transform(),
-            accidental: self.accidental.transform(),
-            type: self.type.transform())
+            noteLetter: noteLetter.transform(),
+            accidental: accidental.transform(),
+            type: type.transform())
     }
 }
 
 extension Key {
     func transform() -> _Key {
         var key = _Key()
-        key.noteLetter = self.noteLetter.transform()
-        key.accidental = self.accidental.transform()
-        key.type = self.type.transform()
+        key.noteLetter = noteLetter.transform()
+        key.accidental = accidental.transform()
+        key.type = type.transform()
         return key
     }
 }
