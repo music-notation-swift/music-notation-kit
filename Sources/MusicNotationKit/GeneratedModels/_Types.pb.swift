@@ -220,24 +220,27 @@ enum _NoteLetter: SwiftProtobuf.Enum {
 
 enum _Instrument: SwiftProtobuf.Enum {
   typealias RawValue = Int
-  case guitar6 // = 0
-  case drums // = 1
+  case undefInstrument // = 0
+  case guitar6 // = 1
+  case drums // = 2
   case UNRECOGNIZED(Int)
 
   init() {
-    self = .guitar6
+    self = .undefInstrument
   }
 
   init?(rawValue: Int) {
     switch rawValue {
-    case 0: self = .guitar6
-    case 1: self = .drums
+    case 0: self = .undefInstrument
+    case 1: self = .guitar6
+    case 2: self = .drums
     default: self = .UNRECOGNIZED(rawValue)
     }
   }
 
   init?(name: String) {
     switch name {
+    case "undefInstrument": self = .undefInstrument
     case "guitar6": self = .guitar6
     case "drums": self = .drums
     default: return nil
@@ -246,6 +249,7 @@ enum _Instrument: SwiftProtobuf.Enum {
 
   init?(jsonName: String) {
     switch jsonName {
+    case "UNDEF_INSTRUMENT": self = .undefInstrument
     case "GUITAR6": self = .guitar6
     case "DRUMS": self = .drums
     default: return nil
@@ -254,6 +258,7 @@ enum _Instrument: SwiftProtobuf.Enum {
 
   init?(protoName: String) {
     switch protoName {
+    case "UNDEF_INSTRUMENT": self = .undefInstrument
     case "GUITAR6": self = .guitar6
     case "DRUMS": self = .drums
     default: return nil
@@ -263,8 +268,9 @@ enum _Instrument: SwiftProtobuf.Enum {
   var rawValue: Int {
     get {
       switch self {
-      case .guitar6: return 0
-      case .drums: return 1
+      case .undefInstrument: return 0
+      case .guitar6: return 1
+      case .drums: return 2
       case .UNRECOGNIZED(let i): return i
       }
     }
@@ -273,6 +279,7 @@ enum _Instrument: SwiftProtobuf.Enum {
   var json: String {
     get {
       switch self {
+      case .undefInstrument: return "\"UNDEF_INSTRUMENT\""
       case .guitar6: return "\"GUITAR6\""
       case .drums: return "\"DRUMS\""
       case .UNRECOGNIZED(let i): return String(i)
@@ -285,6 +292,7 @@ enum _Instrument: SwiftProtobuf.Enum {
   var debugDescription: String {
     get {
       switch self {
+      case .undefInstrument: return ".undefInstrument"
       case .guitar6: return ".guitar6"
       case .drums: return ".drums"
       case .UNRECOGNIZED(let v): return ".UNRECOGNIZED(\(v))"

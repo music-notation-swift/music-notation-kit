@@ -22,7 +22,7 @@ struct _Staff: SwiftProtobuf.Message, SwiftProtobuf.Proto3Message, SwiftProtobuf
   private class _StorageClass {
     typealias ExtendedMessage = _Staff
     var _clef: _Clef? = nil
-    var _instrument: _Instrument = _Instrument.guitar6
+    var _instrument: _Instrument = _Instrument.undefInstrument
 
     init() {}
 
@@ -38,7 +38,7 @@ struct _Staff: SwiftProtobuf.Message, SwiftProtobuf.Proto3Message, SwiftProtobuf
       if let v = _clef {
         try visitor.visitSingularMessageField(value: v, protoFieldNumber: 1)
       }
-      if _instrument != _Instrument.guitar6 {
+      if _instrument != _Instrument.undefInstrument {
         try visitor.visitSingularField(fieldType: _Instrument.self, value: _instrument, protoFieldNumber: 2)
       }
     }

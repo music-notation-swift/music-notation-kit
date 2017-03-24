@@ -145,70 +145,70 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2480FE361E73A06400F21B8A /* PBXContainerItemProxy */ = {
+		24DDBDF31E84BEBC009F8F93 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_188;
 			remoteInfo = SwiftProtobuf;
 		};
-		2480FE371E73A06400F21B8A /* PBXContainerItemProxy */ = {
+		24DDBDF41E84BEBC009F8F93 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_188;
 			remoteInfo = SwiftProtobuf;
 		};
-		2480FE381E73A06400F21B8A /* PBXContainerItemProxy */ = {
+		24DDBDF51E84BEBC009F8F93 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_178;
 			remoteInfo = PluginLibrary;
 		};
-		2480FE391E73A06400F21B8A /* PBXContainerItemProxy */ = {
+		24DDBDF61E84BEBC009F8F93 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_152;
 			remoteInfo = MusicNotationCore;
 		};
-		2480FE3A1E73A06400F21B8A /* PBXContainerItemProxy */ = {
+		24DDBDF71E84BEBC009F8F93 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_188;
 			remoteInfo = SwiftProtobuf;
 		};
-		2480FE3B1E73A06400F21B8A /* PBXContainerItemProxy */ = {
+		24DDBDF81E84BEBC009F8F93 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_178;
 			remoteInfo = PluginLibrary;
 		};
-		2480FE3C1E73A06400F21B8A /* PBXContainerItemProxy */ = {
+		24DDBDF91E84BEBC009F8F93 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_152;
 			remoteInfo = MusicNotationCore;
 		};
-		2480FE3D1E73A06400F21B8A /* PBXContainerItemProxy */ = {
+		24DDBDFA1E84BEBC009F8F93 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_188;
 			remoteInfo = SwiftProtobuf;
 		};
-		2480FE3E1E73A06400F21B8A /* PBXContainerItemProxy */ = {
+		24DDBDFB1E84BEBC009F8F93 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_178;
 			remoteInfo = PluginLibrary;
 		};
-		2480FE3F1E73A06400F21B8A /* PBXContainerItemProxy */ = {
+		24DDBDFC1E84BEBC009F8F93 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -966,52 +966,52 @@
 		OBJ_187 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_188 /* SwiftProtobuf */;
-			targetProxy = 2480FE361E73A06400F21B8A /* PBXContainerItemProxy */;
+			targetProxy = 24DDBDF31E84BEBC009F8F93 /* PBXContainerItemProxy */;
 		};
 		OBJ_210 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_188 /* SwiftProtobuf */;
-			targetProxy = 2480FE371E73A06400F21B8A /* PBXContainerItemProxy */;
+			targetProxy = 24DDBDF41E84BEBC009F8F93 /* PBXContainerItemProxy */;
 		};
 		OBJ_211 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_178 /* PluginLibrary */;
-			targetProxy = 2480FE381E73A06400F21B8A /* PBXContainerItemProxy */;
+			targetProxy = 24DDBDF51E84BEBC009F8F93 /* PBXContainerItemProxy */;
 		};
 		OBJ_301 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_152 /* MusicNotationCore */;
-			targetProxy = 2480FE391E73A06400F21B8A /* PBXContainerItemProxy */;
+			targetProxy = 24DDBDF61E84BEBC009F8F93 /* PBXContainerItemProxy */;
 		};
 		OBJ_302 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_188 /* SwiftProtobuf */;
-			targetProxy = 2480FE3A1E73A06400F21B8A /* PBXContainerItemProxy */;
+			targetProxy = 24DDBDF71E84BEBC009F8F93 /* PBXContainerItemProxy */;
 		};
 		OBJ_303 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_178 /* PluginLibrary */;
-			targetProxy = 2480FE3B1E73A06400F21B8A /* PBXContainerItemProxy */;
+			targetProxy = 24DDBDF81E84BEBC009F8F93 /* PBXContainerItemProxy */;
 		};
 		OBJ_329 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_152 /* MusicNotationCore */;
-			targetProxy = 2480FE3C1E73A06400F21B8A /* PBXContainerItemProxy */;
+			targetProxy = 24DDBDF91E84BEBC009F8F93 /* PBXContainerItemProxy */;
 		};
 		OBJ_330 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_188 /* SwiftProtobuf */;
-			targetProxy = 2480FE3D1E73A06400F21B8A /* PBXContainerItemProxy */;
+			targetProxy = 24DDBDFA1E84BEBC009F8F93 /* PBXContainerItemProxy */;
 		};
 		OBJ_331 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_178 /* PluginLibrary */;
-			targetProxy = 2480FE3E1E73A06400F21B8A /* PBXContainerItemProxy */;
+			targetProxy = 24DDBDFB1E84BEBC009F8F93 /* PBXContainerItemProxy */;
 		};
 		OBJ_332 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_265 /* MusicNotationKit */;
-			targetProxy = 2480FE3F1E73A06400F21B8A /* PBXContainerItemProxy */;
+			targetProxy = 24DDBDFC1E84BEBC009F8F93 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

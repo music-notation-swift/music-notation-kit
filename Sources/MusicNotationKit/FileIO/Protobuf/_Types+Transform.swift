@@ -66,6 +66,25 @@ extension NoteLetter {
     }
 }
 
+extension _Instrument {
+    func transform() -> Instrument? {
+        switch self {
+        case .guitar6: return .guitar6
+        case .drums: return .drums
+        default: return nil
+        }
+    }
+}
+
+extension Instrument {
+    func transform() -> _Instrument {
+        switch self {
+        case .guitar6: return .guitar6
+        case .drums: return .drums
+        }
+    }
+}
+
 extension _KeyType {
     func transform() -> KeyType {
         switch self {

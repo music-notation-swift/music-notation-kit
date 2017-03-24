@@ -21,8 +21,9 @@ enum NoteLetter {
 }
 
 enum Instrument {
-    GUITAR6 = 0;
-    DRUMS = 1;
+    UNDEF_INSTRUMENT = 0;
+    GUITAR6 = 1;
+    DRUMS = 2;
 }
 
 enum Accidental {
