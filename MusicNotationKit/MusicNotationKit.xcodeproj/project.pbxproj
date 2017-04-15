@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		272753641E88846E0021DFCF /* StaffLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2727535F1E88846E0021DFCF /* StaffLayer.swift */; };
+		272753691E888F780021DFCF /* MusicNotationKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272753631E88846E0021DFCF /* MusicNotationKitTests.swift */; };
+		2727536A1E888F890021DFCF /* LinuxMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272753611E88846E0021DFCF /* LinuxMain.swift */; };
+		277CFF381E99A91200363B80 /* BarLineLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277CFF371E99A91200363B80 /* BarLineLayer.swift */; };
+		277CFF3A1E99ABBE00363B80 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277CFF391E99ABBE00363B80 /* GlobalConstants.swift */; };
 		27CE87A91E7512B4007AD729 /* MusicNotationKitiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27CE87A01E7512B4007AD729 /* MusicNotationKitiOS.framework */; };
 		27CE87AE1E7512B4007AD729 /* MusicNotationKitiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CE87AD1E7512B4007AD729 /* MusicNotationKitiOSTests.swift */; };
 		27CE87B01E7512B4007AD729 /* MusicNotationKitiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 27CE87A21E7512B4007AD729 /* MusicNotationKitiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27E81BE21EA2B710002EEB35 /* NoteheadLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E81BE11EA2B710002EEB35 /* NoteheadLayer.swift */; };
 		85095E884BB870EB3BD411A4 /* Pods_MusicNotationKitiOS_MusicNotationKitiOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BCC5C9CC080C9776ECC7A32 /* Pods_MusicNotationKitiOS_MusicNotationKitiOSTests.framework */; };
 		D70544100FA1A1380BFB8366 /* Pods_MusicNotationKitiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 489BA68F7050C0A9A22D2849 /* Pods_MusicNotationKitiOS.framework */; };
 /* End PBXBuildFile section */
@@ -27,12 +33,20 @@
 /* Begin PBXFileReference section */
 		038255A1273E03BB58C2A7CC /* Pods-MusicNotationKitiOS-MusicNotationKitiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicNotationKitiOS-MusicNotationKitiOSTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-MusicNotationKitiOS-MusicNotationKitiOSTests/Pods-MusicNotationKitiOS-MusicNotationKitiOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		08F12DB351665490AB31C6E8 /* Pods-MusicNotationKitiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicNotationKitiOS.release.xcconfig"; path = "../Pods/Target Support Files/Pods-MusicNotationKitiOS/Pods-MusicNotationKitiOS.release.xcconfig"; sourceTree = "<group>"; };
+		2727535F1E88846E0021DFCF /* StaffLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaffLayer.swift; sourceTree = "<group>"; };
+		272753611E88846E0021DFCF /* LinuxMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
+		272753631E88846E0021DFCF /* MusicNotationKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicNotationKitTests.swift; sourceTree = "<group>"; };
+		272753671E888F320021DFCF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		277CFF371E99A91200363B80 /* BarLineLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarLineLayer.swift; sourceTree = "<group>"; };
+		277CFF391E99ABBE00363B80 /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		27CE87A01E7512B4007AD729 /* MusicNotationKitiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MusicNotationKitiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27CE87A21E7512B4007AD729 /* MusicNotationKitiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicNotationKitiOS.h; sourceTree = "<group>"; };
 		27CE87A31E7512B4007AD729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27CE87A81E7512B4007AD729 /* MusicNotationKitiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicNotationKitiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27CE87AD1E7512B4007AD729 /* MusicNotationKitiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicNotationKitiOSTests.swift; sourceTree = "<group>"; };
 		27CE87AF1E7512B4007AD729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27CE87BA1E7DF6A3007AD729 /* MusicNotationKit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MusicNotationKit.playground; sourceTree = "<group>"; };
+		27E81BE11EA2B710002EEB35 /* NoteheadLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteheadLayer.swift; sourceTree = "<group>"; };
 		489BA68F7050C0A9A22D2849 /* Pods_MusicNotationKitiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicNotationKitiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BCC5C9CC080C9776ECC7A32 /* Pods_MusicNotationKitiOS_MusicNotationKitiOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicNotationKitiOS_MusicNotationKitiOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A821489B9B8AC5FCB0D24139 /* Pods-MusicNotationKitiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicNotationKitiOS.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-MusicNotationKitiOS/Pods-MusicNotationKitiOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -60,9 +74,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2727535E1E88846E0021DFCF /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2727535F1E88846E0021DFCF /* StaffLayer.swift */,
+				277CFF371E99A91200363B80 /* BarLineLayer.swift */,
+				277CFF391E99ABBE00363B80 /* GlobalConstants.swift */,
+				27E81BE11EA2B710002EEB35 /* NoteheadLayer.swift */,
+			);
+			name = Sources;
+			path = ../Sources;
+			sourceTree = "<group>";
+		};
+		272753601E88846E0021DFCF /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				272753611E88846E0021DFCF /* LinuxMain.swift */,
+				272753621E88846E0021DFCF /* MusicNotationKitTests */,
+			);
+			name = Tests;
+			path = ../Tests;
+			sourceTree = "<group>";
+		};
+		272753621E88846E0021DFCF /* MusicNotationKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				272753631E88846E0021DFCF /* MusicNotationKitTests.swift */,
+			);
+			path = MusicNotationKitTests;
+			sourceTree = "<group>";
+		};
 		27CE87771E751245007AD729 = {
 			isa = PBXGroup;
 			children = (
+				2727535E1E88846E0021DFCF /* Sources */,
+				272753601E88846E0021DFCF /* Tests */,
+				27CE87BA1E7DF6A3007AD729 /* MusicNotationKit.playground */,
 				27CE87A11E7512B4007AD729 /* MusicNotationKitiOS */,
 				27CE87AC1E7512B4007AD729 /* MusicNotationKitiOSTests */,
 				27CE87841E751256007AD729 /* Products */,
@@ -101,6 +148,7 @@
 		3E72D0684F8DA608BD9A20D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				272753671E888F320021DFCF /* XCTest.framework */,
 				489BA68F7050C0A9A22D2849 /* Pods_MusicNotationKitiOS.framework */,
 				6BCC5C9CC080C9776ECC7A32 /* Pods_MusicNotationKitiOS_MusicNotationKitiOSTests.framework */,
 			);
@@ -312,6 +360,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				272753641E88846E0021DFCF /* StaffLayer.swift in Sources */,
+				277CFF3A1E99ABBE00363B80 /* GlobalConstants.swift in Sources */,
+				277CFF381E99A91200363B80 /* BarLineLayer.swift in Sources */,
+				27E81BE21EA2B710002EEB35 /* NoteheadLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +371,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2727536A1E888F890021DFCF /* LinuxMain.swift in Sources */,
+				272753691E888F780021DFCF /* MusicNotationKitTests.swift in Sources */,
 				27CE87AE1E7512B4007AD729 /* MusicNotationKitiOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,6 +567,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DD0AEFF50F47608D8209B272 /* Pods-MusicNotationKitiOS-MusicNotationKitiOSTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -569,6 +624,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 038255A1273E03BB58C2A7CC /* Pods-MusicNotationKitiOS-MusicNotationKitiOSTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";

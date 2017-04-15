@@ -1,12 +1,20 @@
 use_frameworks!
 
-project 'MusicNotationKit/MusicNotationKit.xcodeproj'
+workspace 'MusicNotationKit'
 
 target 'MusicNotationKitiOS' do
-    pod 'MusicNotationCore'
+    project 'MusicNotationKit/MusicNotationKit.xcodeproj'
+
+    pod 'MusicNotationCore', :git => 'https://github.com/drumnkyle/music-notation-core.git', :branch => 'collectionConformance'
 
     target 'MusicNotationKitiOSTests' do
-        pod 'MusicNotationCore'
+        pod 'MusicNotationCore', :git => 'https://github.com/drumnkyle/music-notation-core.git', :branch => 'collectionConformance'
     end
+end
+
+target 'MusicNotationKitSampleApp' do
+    project 'MusicNotationKitSampleApp/MusicNotationKitSampleApp.xcodeproj'
+
+    pod 'MusicNotationKit', :path => '.'
 end
 

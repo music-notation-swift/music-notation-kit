@@ -1,12 +1,28 @@
 PODS:
   - MusicNotationCore (0.1.1)
+  - MusicNotationKit (0.1.0):
+    - MusicNotationCore
 
 DEPENDENCIES:
-  - MusicNotationCore
+  - MusicNotationCore (from `https://github.com/drumnkyle/music-notation-core.git`, branch `collectionConformance`)
+  - MusicNotationKit (from `.`)
+
+EXTERNAL SOURCES:
+  MusicNotationCore:
+    :branch: collectionConformance
+    :git: https://github.com/drumnkyle/music-notation-core.git
+  MusicNotationKit:
+    :path: .
+
+CHECKOUT OPTIONS:
+  MusicNotationCore:
+    :commit: 180d9a1331d27acfe0db1963ced017fa57c7a349
+    :git: https://github.com/drumnkyle/music-notation-core.git
 
 SPEC CHECKSUMS:
-  MusicNotationCore: c243dad1dcbc88910099a51dd5e7eca2fe1335a2
+  MusicNotationCore: 92b91bb170e01a3226f063eca7d9b75cc35d9c92
+  MusicNotationKit: e50453682df2e95af10a6af581fad4d9aa8008f8
 
-PODFILE CHECKSUM: ed27a0d72b95f1f6eb55f91c75d9864c0acd25f8
+PODFILE CHECKSUM: 27ac466e66b6f94485aa26d9b87b78cd0bf53a2c
 
 COCOAPODS: 1.2.0
