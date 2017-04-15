@@ -44,6 +44,7 @@ class ViewController: UIViewController {
             notes: [
                 [
                     Note(noteDuration: .quarter, tone: Tone(noteLetter: .f, octave: .octave4)),
+                    Note(noteDuration: .quarter, tone: Tone(noteLetter: .f, octave: .octave4)),
                     Note(noteDuration: .quarter, tone: Tone(noteLetter: .f, octave: .octave4))
                 ]
             ]
