@@ -11,9 +11,12 @@ import CoreGraphics
 public class BarLineLayer: CAShapeLayer {
 
     private enum Constant {
-        static let barLineWidth: CGFloat = GlobalConstant.staffLineWidth * 2
-        static let spaceBetweenShapes: CGFloat = Constant.barLineWidth
-        static let circleRadius: CGFloat = 4.0
+        static let barLineWidth: CGFloat = GlobalConstant.staffLineWidth
+        static let spaceBetweenLines: CGFloat = 4.0
+        static let verticalSpaceBetweenCircles: CGFloat = GlobalConstant.staffLineSpacing / 2.0
+        static let horizontalSpaceAfterCircles: CGFloat = Constant.verticalSpaceBetweenCircles / 2.0
+        static let circleRadius: CGFloat = 2.0
+        static let dashPattern: [NSNumber] = [6]
     }
 
     // Source: http://www.treblis.com/notation/bar.html
@@ -22,7 +25,8 @@ public class BarLineLayer: CAShapeLayer {
         case doubleLine
         case doubleBarLine
         case dashed
-        case `repeat`
+        case startRepeat
+        case endRepeat
     }
 
     public var numberOfStaffLines: Int = 5 {
@@ -31,11 +35,6 @@ public class BarLineLayer: CAShapeLayer {
         }
     }
     public var barLineType: LineType = .single {
-        didSet {
-            setNeedsDisplay()
-        }
-    }
-    public var startX: CGFloat = 0.0 {
         didSet {
             setNeedsDisplay()
         }
@@ -60,32 +59,28 @@ public class BarLineLayer: CAShapeLayer {
                             numberOfStaffLines: Int = 5) -> CGSize {
         let height = staffHeight(forNumberOfLines: numberOfStaffLines)
         switch lineType {
-        case .single:
+        case .single, .dashed:
             return CGSize(
                 width: Constant.barLineWidth,
                 height: height)
         case .doubleLine:
             return CGSize(
-                width: Constant.barLineWidth * 2 + Constant.spaceBetweenShapes,
+                width: Constant.barLineWidth * 2 + Constant.spaceBetweenLines,
                 height: height)
         case .doubleBarLine:
             return CGSize(
-                width: Constant.barLineWidth * 3 + Constant.spaceBetweenShapes,
+                width: Constant.barLineWidth * 4 + Constant.spaceBetweenLines,
                 height: height)
-        case .dashed:
+        case .startRepeat, .endRepeat:
             return CGSize(
-                width: Constant.barLineWidth,
-                height: height)
-        case .repeat:
-            return CGSize(
-                width: (Constant.barLineWidth * 3) + Constant.spaceBetweenShapes
-                + (Constant.spaceBetweenShapes / 2) + (Constant.circleRadius * 2),
+                width: (Constant.barLineWidth * 4) + Constant.spaceBetweenLines
+                + Constant.horizontalSpaceAfterCircles + (Constant.circleRadius * 2),
                 height: height)
         }
     }
 
     private func setup() {
-        fillColor = nil
+        fillColor = GlobalConstant.lineColor.cgColor
         lineWidth = Constant.barLineWidth
         strokeColor = GlobalConstant.lineColor.cgColor
     }
@@ -101,46 +96,73 @@ public class BarLineLayer: CAShapeLayer {
         switch barLineType {
         case .single:
             let linePath = UIBezierPath()
-            linePath.move(to: CGPoint(x: startX + lineWidth / 2, y: 0))
+            linePath.move(to: CGPoint(x: lineWidth / 2, y: 0))
             linePaths = [linePath]
             otherShapes = []
         case .doubleLine:
             let line1Path = UIBezierPath()
             let line2Path = UIBezierPath()
-            line1Path.move(to: CGPoint(x: startX + lineWidth / 2, y: 0))
-            line2Path.move(to: CGPoint(x: startX + Constant.spaceBetweenShapes, y: 0))
+            line1Path.move(to: CGPoint(x: lineWidth / 2, y: 0))
+            line2Path.move(to: CGPoint(x: Constant.spaceBetweenLines + lineWidth + lineWidth / 2, y: 0))
             linePaths = [line1Path, line2Path]
             otherShapes = []
         case .doubleBarLine:
             linePaths = BarLineLayer.startDoubleBarLinePaths(
-                startingAt: startX,
+                startingAt: 0,
                 lineWidth: lineWidth)
             otherShapes = []
         case .dashed:
-            lineDashPattern = [1]
+            lineDashPattern = Constant.dashPattern
             let linePath = UIBezierPath()
-            linePath.move(to: CGPoint(x: startX + lineWidth / 2, y: 0))
+            linePath.move(to: CGPoint(x: lineWidth / 2, y: 0))
             linePaths = [linePath]
             otherShapes = []
-        case .repeat:
+        case .endRepeat:
             let middleY = endY / 2
             // Need to draw 2 dots in the center with spacing
-            let fullSpace = Constant.circleRadius * 4 + Constant.spaceBetweenShapes
+            let fullSpace = Constant.circleRadius * 4 + Constant.verticalSpaceBetweenCircles
             let top = middleY - fullSpace / 2
             let circle1 = UIBezierPath(ovalIn: CGRect(
-                x: startX,
+                x: lineWidth,
                 y: top,
                 width: Constant.circleRadius * 2,
                 height: Constant.circleRadius * 2))
             let circle2 = UIBezierPath(ovalIn: CGRect(
-                x: startX,
-                y: top + Constant.circleRadius * 2 + Constant.spaceBetweenShapes,
+                x: lineWidth,
+                y: top + Constant.circleRadius * 2 + Constant.verticalSpaceBetweenCircles,
                 width: Constant.circleRadius * 2,
                 height: Constant.circleRadius * 2))
             otherShapes = [circle1, circle2]
             linePaths = BarLineLayer.startDoubleBarLinePaths(
-                startingAt: Constant.circleRadius * 2 + Constant.spaceBetweenShapes / 2,
+                startingAt: Constant.circleRadius * 2 + Constant.horizontalSpaceAfterCircles,
                 lineWidth: lineWidth)
+        case .startRepeat:
+            let middleY = endY / 2
+            // Need to draw 2 dots in the center with spacing
+            let fullSpace = Constant.circleRadius * 4 + Constant.verticalSpaceBetweenCircles
+            let top = middleY - fullSpace / 2
+            // FIXME: Circles are not positioned properly in x direction
+            let circle1 = UIBezierPath(ovalIn: CGRect(
+                x: BarLineLayer.size(forLineType: .doubleBarLine).width,
+                y: top,
+                width: Constant.circleRadius * 2,
+                height: Constant.circleRadius * 2))
+            let circle2 = UIBezierPath(ovalIn: CGRect(
+                x: BarLineLayer.size(forLineType: .doubleBarLine).width,
+                y: top + Constant.circleRadius * 2 + Constant.verticalSpaceBetweenCircles,
+                width: Constant.circleRadius * 2,
+                height: Constant.circleRadius * 2))
+            otherShapes = [circle1, circle2]
+            linePaths = BarLineLayer.startDoubleBarLinePaths(
+                startingAt: 0,
+                lineWidth: lineWidth)
+            // Mirror the double bar line
+            linePaths.forEach { linePath in
+                let mirrorOverXOrigin = CGAffineTransform(scaleX: -1.0, y: 1.0)
+                let translate = CGAffineTransform(translationX: bounds.width, y: 0)
+                linePath.apply(mirrorOverXOrigin)
+                linePath.apply(translate)
+            }
         }
 
         // draw lines
@@ -166,14 +188,19 @@ public class BarLineLayer: CAShapeLayer {
         let line1Path = UIBezierPath()
         let line2Path = UIBezierPath()
         let line3Path = UIBezierPath()
+        let line4Path = UIBezierPath()
         line1Path.move(to: CGPoint(x: startX + lineWidth / 2, y: 0))
+        let line2Start = startX + lineWidth + Constant.spaceBetweenLines + (lineWidth / 2)
         line2Path.move(to: CGPoint(
-            x: startX + lineWidth + Constant.spaceBetweenShapes,
+            x: line2Start,
             y: 0))
         line3Path.move(to: CGPoint(
-            x: startX + lineWidth + Constant.spaceBetweenShapes + (lineWidth / 2),
+            x: line2Start + lineWidth,
             y: 0))
-        return [line1Path, line2Path, line3Path]
+        line4Path.move(to: CGPoint(
+            x: line2Start + 2 * lineWidth,
+            y: 0))
+        return [line1Path, line2Path, line3Path, line4Path]
     }
 
     private static func staffHeight(forNumberOfLines numberOfLines: Int) -> CGFloat {

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		272753641E88846E0021DFCF /* StaffLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2727535F1E88846E0021DFCF /* StaffLayer.swift */; };
 		272753691E888F780021DFCF /* MusicNotationKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272753631E88846E0021DFCF /* MusicNotationKitTests.swift */; };
+		275695A11EA31E1B009B5397 /* StaffRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275695A01EA31E1B009B5397 /* StaffRenderer.swift */; };
 		277CFF381E99A91200363B80 /* BarLineLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277CFF371E99A91200363B80 /* BarLineLayer.swift */; };
 		277CFF3A1E99ABBE00363B80 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277CFF391E99ABBE00363B80 /* GlobalConstants.swift */; };
 		27CE87A91E7512B4007AD729 /* MusicNotationKitiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27CE87A01E7512B4007AD729 /* MusicNotationKitiOS.framework */; };
@@ -35,6 +36,7 @@
 		2727535F1E88846E0021DFCF /* StaffLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaffLayer.swift; sourceTree = "<group>"; };
 		272753631E88846E0021DFCF /* MusicNotationKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicNotationKitTests.swift; sourceTree = "<group>"; };
 		272753671E888F320021DFCF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		275695A01EA31E1B009B5397 /* StaffRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaffRenderer.swift; sourceTree = "<group>"; };
 		277CFF371E99A91200363B80 /* BarLineLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarLineLayer.swift; sourceTree = "<group>"; };
 		277CFF391E99ABBE00363B80 /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		27CE87A01E7512B4007AD729 /* MusicNotationKitiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MusicNotationKitiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +81,7 @@
 				277CFF371E99A91200363B80 /* BarLineLayer.swift */,
 				277CFF391E99ABBE00363B80 /* GlobalConstants.swift */,
 				27E81BE11EA2B710002EEB35 /* NoteheadLayer.swift */,
+				275695A01EA31E1B009B5397 /* StaffRenderer.swift */,
 			);
 			name = Sources;
 			path = ../Sources;
@@ -361,6 +364,7 @@
 				277CFF3A1E99ABBE00363B80 /* GlobalConstants.swift in Sources */,
 				277CFF381E99A91200363B80 /* BarLineLayer.swift in Sources */,
 				27E81BE21EA2B710002EEB35 /* NoteheadLayer.swift in Sources */,
+				275695A11EA31E1B009B5397 /* StaffRenderer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

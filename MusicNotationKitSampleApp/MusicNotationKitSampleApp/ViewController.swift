@@ -45,6 +45,16 @@ class ViewController: UIViewController {
                 [
                     Note(noteDuration: .quarter, tone: Tone(noteLetter: .f, octave: .octave4)),
                     Note(noteDuration: .quarter, tone: Tone(noteLetter: .f, octave: .octave4)),
+                    Note(noteDuration: .quarter, tone: Tone(noteLetter: .f, octave: .octave4)),
+                    Note(noteDuration: .quarter, tone: Tone(noteLetter: .f, octave: .octave4))
+                ]
+            ]
+        ))
+        staff.appendMeasure(Measure(
+            timeSignature: timeSignature,
+            notes: [
+                [
+                    Note(noteDuration: .quarter, tone: Tone(noteLetter: .f, octave: .octave4)),
                     Note(noteDuration: .quarter, tone: Tone(noteLetter: .f, octave: .octave4))
                 ]
             ]
@@ -58,87 +68,5 @@ class TestView: UIView {
         super.setNeedsDisplay()
         // TODO: This doesn't get called on bounds change even if redraw is set
         layer.sublayers?.forEach { $0.setNeedsDisplay() }
-    }
-}
-
-class StaffRenderer {
-
-    enum Constant {
-        static let spaceBetweenNotes: CGFloat = 10.0
-    }
-
-    let staff: Staff
-
-    init(staff: Staff) {
-        self.staff = staff
-    }
-
-    func render(on view: UIView) {
-        let staffLayer = StaffLayer()
-        staffLayer.frame = view.bounds
-        staffLayer.numberOfLines = 5
-
-        view.layer.addSublayer(staffLayer)
-
-        var currentX: CGFloat = 0.0
-
-        let barLineLayer = BarLineLayer()
-        barLineLayer.startX = currentX
-        barLineLayer.barLineType = .single
-        barLineLayer.frame = CGRect(origin: .zero, size: barLineLayer.size)
-        view.layer.addSublayer(barLineLayer)
-        currentX += barLineLayer.size.width
-        currentX += Constant.spaceBetweenNotes
-
-        for notesHolder in staff {
-            switch notesHolder {
-            case let measure as Measure:
-                currentX = renderMeasure(measure, on: view, startX: currentX)
-                print("measure: \(measure)")
-            case let measureRepeat as MeasureRepeat:
-                print("not done: \(measureRepeat)")
-            default:
-                assertionFailure()
-            }
-        }
-    }
-
-    func renderMeasure(_ measure: Measure, on view: UIView, startX: CGFloat) -> CGFloat {
-        var currentX = startX
-
-        for measureSlices in measure {
-            // TODO: work with multiple notes in a slice
-            guard let firstSlice = measureSlices.first else {
-                fatalError("No slices")
-            }
-            switch firstSlice.noteCollection {
-            case _ as Note:
-                let noteHeadLayer = NoteheadLayer()
-                noteHeadLayer.startX = currentX
-                noteHeadLayer.frame = CGRect(
-                    origin: CGPoint(x: currentX, y: 0),
-                    size: noteHeadLayer.size)
-                view.layer.addSublayer(noteHeadLayer)
-                currentX += noteHeadLayer.size.width + Constant.spaceBetweenNotes
-            case _ as Tuplet: break
-            default:
-                assertionFailure("No other types")
-            }
-        }
-        // draw last bar line
-        let endBarLineLayer = BarLineLayer()
-        endBarLineLayer.startX = currentX
-        endBarLineLayer.barLineType = .single
-        endBarLineLayer.frame = CGRect(
-            origin: CGPoint(x: currentX, y: 0),
-            size: endBarLineLayer.size)
-        view.layer.addSublayer(endBarLineLayer)
-        currentX += endBarLineLayer.size.width
-        currentX += Constant.spaceBetweenNotes
-        return currentX
-    }
-
-    func createBarLineLayer() -> CAShapeLayer {
-        return BarLineLayer()
     }
 }
