@@ -4,7 +4,7 @@ A Music Notation Library in Swift
 
 [![Build Status](https://travis-ci.org/drumnkyle/music-notation-kit.svg?branch=master)](https://travis-ci.org/drumnkyle/music-notation-kit)
 [![codecov](https://codecov.io/gh/drumnkyle/music-notation-kit/branch/master/graph/badge.svg)](https://codecov.io/gh/drumnkyle/music-notation-kit/)
-![Swift](https://img.shields.io/badge/%20in-swift%203.0-orange.svg)
+![Swift](https://img.shields.io/badge/%20in-swift%205.3-orange.svg)
 
 This library will have a rendering engine for music notation as well as the ability to export and import different file formats, such as [MusicXML](http://www.musicxml.com) and a binary format. Also, it will most likely help with some form of MIDI playback.
 
