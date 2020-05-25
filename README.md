@@ -18,4 +18,4 @@ There is a Slack channel you can join if you want to see more into the developme
 
 ===
 # License
-This library is under the GPLv3 license. If you would like to use this library for commercial use, please contact [Kyle Sherman](mailto:kyledsherman@gmail.com) for commercial license information
+This library is under the GPLv3 license. If you would like to use this library for commercial use, please contact [Steven Woolgar](mailto:woolie@gmail.com) for commercial license information
